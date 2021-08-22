@@ -10,14 +10,15 @@ body {
 
 .overlay {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-image: url("assets/LandingPage.png");
   background-color: rgb(0,0,0);
-  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
   transition: 0.5s;
 }
 
@@ -44,9 +45,10 @@ body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  bottom: 150px;
+  right: 35px;
   font-size: 60px;
+  
 }
 
 @media screen and (max-height: 450px) {
@@ -64,12 +66,13 @@ body {
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">START!</a>
   <div class="overlay-content">
-   </div>
+ 
+  </div>
 </div>
 
-<h2>Fullscreen Overlay Nav Example</h2>
+<!-- <h2>Fullscreen Overlay Nav Example</h2>
 <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
-<p>In this example, the navigation menu will slide in, from left to right:</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p> -->
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
