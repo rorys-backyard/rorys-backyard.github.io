@@ -1,0 +1,92 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-image: url("assets/LandingPage.png");
+    background-color: rgb(0,0,0);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #818181;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    bottom: 100px;
+    right: 35px;
+    font-size: 45px;
+    background-color: #f44336;
+    border: 5px solid #f1f1f1;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  
+  .endgame {
+    height: 100%;
+    width: 0%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    background-size: cover;
+    transition: 0.5s;
+  }
+  
+  .endgame .lastanimal {
+    position: absolute;
+    bottom: 100px;
+    left: 35px;
+    font-size: 45px;
+    background-color: #f44336;
+    border: 5px solid #f1f1f1;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  
+  .endgame-content {
+    position: relative;
+    z-index: 1
+    top: 25%;
+    width: 100%;
+    color: white;
+    margin-top: 300px;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  /* @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    } */
+  }
