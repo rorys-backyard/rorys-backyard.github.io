@@ -8,6 +8,4 @@ function closeNav() {
 
 function myFunction() {
     document.getElementById("Owl").style.width = "0%";
-  }
-
-  
+  };
