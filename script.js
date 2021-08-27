@@ -12,7 +12,7 @@ function closeNav() {
         const animatedMarker = document.querySelector("#animated-marker");
         const aEntity = document.querySelector("#raccoon, #owl");
 
-        animatedMarker.addEventListener('click', function(ev, target){
+        animatedMarker.addEventListener('touchend', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
                 const scale = aEntity.getAttribute('scale');
