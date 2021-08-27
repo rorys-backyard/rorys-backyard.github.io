@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <script src="script.js"></script>
   </head>
 
   <body>
@@ -19,16 +18,16 @@
     <div id="endgame" class="endgame">
       <a href="javascript:void(0)" class="lastanimal" onclick="openNav()"></a>
       <div class="endgame-content">
-    <!-- <a>YOU FOUND</a>
+    <a>YOU FOUND</a>
     <a>X</a>
-    <a>ANIMALS IN RORY'S BACKYARD!</a> -->
+    <a>ANIMALS IN RORY'S BACKYARD!</a>
       </div>
     </div>
 
-    <a-scene embedded arjs>
+    <a-scene embedded arjs gesture-detector>
       <!-- <a-marker preset='hiro'>   -->
-      <a-marker preset='custom' type='pattern' url='assets/pattern-RORY.patt'>
-        <a-image id="Owl" src="assets/owl.png" alt="Great Horned Owl" onclick="myFunction()"
+      <a-marker id="parent-marker" preset='custom' type='pattern' url='assets/pattern-RORY.patt'>
+        <a-image id="child-image" src="assets/owl.png" alt="Great Horned Owl"
              scale="0.75 0.75 0.75"
              position="0 0 0"
              rotation="90 180 0"      
@@ -75,6 +74,9 @@
         ></a-image>
       </a-marker>
       <a-entity camera></a-entity>
-    </a-scene>      
+    </a-scene>     
+    
+    <script src="script.js"></script>
+
 </body>
 </html>

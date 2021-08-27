@@ -7,5 +7,15 @@ function closeNav() {
   }
 
 function myFunction() {
-    document.getElementById("Owl").style.width = "0%";
-  };
+    alert();
+    console.log("asldofgihasd");
+  }
+
+  AFRAME.registerComponent('markerhandler', {
+
+    init: function() {
+        const parentMarker = document.querySelector("#parent-marker");
+        const childMarker = document.querySelector("#child-image");
+
+        parentMarker.addEventListener('click', myFunction());
+}});
