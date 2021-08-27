@@ -6,20 +6,18 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-  function openNav() {
-    document.getElementById("owl").style.width = "0%";
-  }
-
-function myFunction() {
-    alert();
-    console.log("asldofgihasd");
-  }
-
   AFRAME.registerComponent('markerhandler', {
 
     init: function() {
-        const parentMarker = document.querySelector("#parent-marker");
-        const childMarker = document.querySelector("#child-image");
+        const animatedMarker = document.querySelector("#animated-marker");
+        const aEntity = document.querySelector("#raccoon, #owl");
 
-        parentMarker.addEventListener('click', myFunction());
+        animatedMarker.addEventListener('click', function(ev, target){
+            const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
+            if (aEntity && intersectedElement === aEntity) {
+                const scale = aEntity.getAttribute('scale');
+                Object.keys(scale).forEach((key) => scale[key] = 0);
+                aEntity.setAttribute('scale', scale);
+            }
+        });
 }});
