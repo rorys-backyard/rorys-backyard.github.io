@@ -6,6 +6,10 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+  function openNav() {
+    document.getElementById("owl").style.width = "0%";
+  }
+
 function myFunction() {
     alert();
     console.log("asldofgihasd");
