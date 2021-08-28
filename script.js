@@ -2,6 +2,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+let score = 0;
 
 AFRAME.registerComponent('owl', {
 
@@ -15,8 +16,11 @@ AFRAME.registerComponent('owl', {
                 const scale = aEntity.getAttribute('scale');
                 Object.keys(scale).forEach((key) => scale[key] = 0);
                 aEntity.setAttribute('scale', scale);
+                score = score += 1;
+                document.getElementById('score').innerHTML = "Animals Found: " +score;
             }
         });
+        
 }});
 
 AFRAME.registerComponent('raccoon', {
@@ -31,6 +35,8 @@ AFRAME.registerComponent('raccoon', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -47,6 +53,8 @@ AFRAME.registerComponent('skunk', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -63,6 +71,8 @@ AFRAME.registerComponent('frog', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -79,6 +89,8 @@ AFRAME.registerComponent('bobcat', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -95,6 +107,8 @@ AFRAME.registerComponent('deer', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -111,6 +125,8 @@ AFRAME.registerComponent('mockingbird', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -127,6 +143,8 @@ AFRAME.registerComponent('snake', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -143,6 +161,8 @@ AFRAME.registerComponent('turtle', {
               const scale = aEntity.getAttribute('scale');
               Object.keys(scale).forEach((key) => scale[key] = 0);
               aEntity.setAttribute('scale', scale);
+              score = score += 1;
+              document.getElementById('score').innerHTML = "Animals Found: " +score;
           }
       });
 }});
@@ -154,6 +174,7 @@ let timerInterval = null;
 
 function onTimesUp() {
   clearInterval(timerInterval);
+  openNav();
 }
 
 function startTimer() {

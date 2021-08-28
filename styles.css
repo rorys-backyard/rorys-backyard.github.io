@@ -51,24 +51,14 @@ body {
   .endgame {
     height: 100%;
     width: 0%;
-    z-index: 1;
+    z-index: 4;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: blue;
+    background-color: tan;
     background-size: cover;
     transition: 0.5s;
-  }
-  
-  .endgame .lastanimal {
-    position: absolute;
-    bottom: 100px;
-    left: 35px;
-    font-size: 45px;
-    background-color: #f44336;
-    border: 5px solid #f1f1f1;
-    padding: 5px 15px;
-    border-radius: 20px;
+    color: white;
   }
   
   .endgame-content {
@@ -93,7 +83,7 @@ body {
   background-color: green;
   color: white;
   font-size: 35px;
-  font-family: cursive;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 5px solid white;
   border-radius: 20px;
   padding: 5px 15px;
