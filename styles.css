@@ -92,15 +92,26 @@ body {
   right: 10px;
   background-color: green;
   color: white;
-  font-size: 45px;
-  font-family: "Times New Roman";
+  font-size: 35px;
+  font-family: cursive;
   border: 5px solid white;
   border-radius: 20px;
   padding: 5px 15px;
+  z-index: 2
 }
 
-.counter {
-
+.score {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: green;
+  color: white;
+  font-size: 35px;
+  font-family: cursive;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  z-index: 2;
 }
 
   @media screen and (max-height: 450px) {

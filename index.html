@@ -12,13 +12,18 @@
 </head>
   <body style='margin : 0px; overflow: hidden;'>
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">START!</a>
+      <a id="startbtn" href="javascript:void(0)" class="closebtn" onclick="closeNav(), startTimer()">START!</a>
       <div class="overlay-content"></div>
     </div>
 
     <div class="timer">
      <span id="timer" class="timer">1:00</span>
    </div>
+
+   <div class="score">
+     <span class="score">0</span>
+   </div>
+
 <!-- Custom marker
     <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-RORY.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'> -->
 
