@@ -86,6 +86,23 @@ body {
   display: none;
 }
 
+.timer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: green;
+  color: white;
+  font-size: 45px;
+  font-family: "Times New Roman";
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.counter {
+
+}
+
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
