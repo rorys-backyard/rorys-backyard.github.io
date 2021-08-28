@@ -185,7 +185,7 @@ function startTimer() {
       timeLeft
     );
 
-    if (timeLeft === 0) {
+    if (timeLeft === 0 || score == 9) {
       onTimesUp();
     }
   }, 1000);
