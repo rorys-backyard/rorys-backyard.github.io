@@ -167,7 +167,7 @@ init: function() {
     });
 }});
 
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 6;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
