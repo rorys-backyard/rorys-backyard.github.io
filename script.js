@@ -2,10 +2,6 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-function cameraFlash() {
-  document.getElementById("cameraflash").style.visibility = visible;
-}
-
 let score = 0;
 
 AFRAME.registerComponent('owl', {
