@@ -167,7 +167,7 @@ init: function() {
     });
 }});
 
-const TIME_LIMIT = 6;
+const TIME_LIMIT = 20;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -200,7 +200,7 @@ if (seconds < 10) {
 }
 
 if (seconds <= 15) {
-  document.getElementById("timer").style.backgroundColor = "yellow";
+  document.getElementById("timer").style.backgroundColor = "gold";
 }
 
 if (seconds <= 5) {
