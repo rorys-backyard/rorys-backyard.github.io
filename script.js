@@ -61,7 +61,6 @@ init: function() {
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
             document.getElementById('cameraflash').style.display = 'block';
-            document.getElementById('cameraflash').style.display = 'none';
             setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
@@ -187,7 +186,7 @@ init: function() {
     });
 }});
 
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 60;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
