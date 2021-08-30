@@ -18,7 +18,10 @@ AFRAME.registerComponent('owl', {
               aEntity.setAttribute('scale', scale);
               score = score += 1;
               document.getElementById('score').innerHTML = "Animals Found: " +score;
+              document.getElementById('cameraflash').style.display = 'block';
+              setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
           }
+          
       });
       
 }});
@@ -37,6 +40,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -55,6 +60,9 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            document.getElementById('cameraflash').style.display = 'none';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -73,6 +81,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -91,6 +101,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -109,6 +121,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -127,6 +141,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -145,6 +161,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
@@ -163,6 +181,8 @@ init: function() {
             aEntity.setAttribute('scale', scale);
             score = score += 1;
             document.getElementById('score').innerHTML = "Animals Found: " +score;
+            document.getElementById('cameraflash').style.display = 'block';
+            setTimeout(function(){document.getElementById('cameraflash').style.display = 'none'}, 100);
         }
     });
 }});
