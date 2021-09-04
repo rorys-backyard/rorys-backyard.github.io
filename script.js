@@ -327,6 +327,6 @@ function openNav() {
             finalScore.innerHTML = score + ' ANIMALS';
         }
     } else {
-        finalScore.innerHTML = score + 'ALL THE ANIMALS';
+        finalScore.innerHTML = 'ALL THE ANIMALS';
     }
 }
