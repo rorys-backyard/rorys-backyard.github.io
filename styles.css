@@ -267,7 +267,7 @@ body {
 
 .notebook-paper-left {
     background-color: white;
-    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 21px, teal 22px);
+    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
     box-shadow: 0px 0px 5px black;
     margin-left: 15px;
     margin-right: 15px;
@@ -281,7 +281,7 @@ body {
 
 .notebook-paper-right {
     background-color: white;
-    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 21px, teal 22px);
+    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
     box-shadow: 0px 0px 5px black;
     margin-left: 15px;
     margin-right: 15px;
