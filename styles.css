@@ -9,6 +9,11 @@ body {
     src: url(Gagalin-Regular.otf);
 }
 
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url(ArchitectsDaughter-Regular.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .landing-page {
