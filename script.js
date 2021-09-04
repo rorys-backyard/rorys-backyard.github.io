@@ -271,7 +271,7 @@ AFRAME.registerComponent('turtle', {
     },
 });
 
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 2;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;

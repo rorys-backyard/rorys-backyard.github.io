@@ -2,6 +2,13 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+@font-face {
+  font-family: Gagalin;
+  src: url(Gagalin-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .overlay {
   height: 100%;
   width: 100%;
@@ -46,6 +53,7 @@ body {
   position: relative;
   text-align: center;
   font-size: 45px;
+  font-family: Gagalin;
   background-color: #f44336;
   border: 5px solid #f1f1f1;
   box-shadow: inset 3px 1px 6px lightgray;
@@ -83,15 +91,15 @@ body {
 
 .endgame-content {
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Gagalin;
   z-index: 1;
   color: white;
   background-color: #6b5c47;
   margin-left: 15px;
   margin-right: 15px;
   padding: 15px;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
   border: solid white;
   text-shadow: 2px 1px 5px black;
@@ -103,18 +111,19 @@ body {
   float: left;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 15px;
   background-color: rgb(202, 200, 200);
   box-shadow: 3px 2px 5px #000000;
-  font-size: 12px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
   }
 
 .fact-sheet-photos {
-  float: left;
+  float: right;
   height: auto;
   width: 150px;
   align-content: center;
   padding: 10px 10px 10px 10px;
-  
 }
 
 .a-enter-vr-button {
@@ -128,9 +137,9 @@ right: 10px;
 background-color: lightblue;
 color: white;
 text-shadow: 0px 0px 10px black;
-font-size: 20px;
-font-weight: 900;
-font-family: 'Courier New', Courier, monospace;
+font-size: 25px;
+font-weight: 500;
+font-family: Gagalin;
 border: 5px solid white;
 border-radius: 10px;
 box-shadow: inset 0px 0px 7px #888888;
@@ -144,10 +153,10 @@ top: 10px;
 left: 10px;
 background-color: tan;
 color: white;
-text-shadow: 0px 0px 3px black;
-font-size: 20px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: 700;
+text-shadow: 0px 0px 10px black;
+font-size: 25px;
+font-family: Gagalin;
+font-weight: 500;
 border: 5px solid white;
 box-shadow: inset 0px 0px 7px #888888;
 border-radius: 10px;
