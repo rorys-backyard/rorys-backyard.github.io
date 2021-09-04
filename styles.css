@@ -262,7 +262,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
-.polaroid-container:active .polaroid-inner {
+.polaroid-container:hover .polaroid-inner {
     transform: rotateY(180deg);
 }
 
