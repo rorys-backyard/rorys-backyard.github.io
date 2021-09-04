@@ -10,23 +10,23 @@ const cameraFlash = document.getElementById('cameraflash');
 const finalScore = document.querySelector('#finalscore');
 const maximumAnimals = 9;
 
-const animals = [
-    {
-        name: 'owl',
-    },
-    {
-        name: 'bunny',
-    },
-    {
-        name: 'horse',
-    },
-    {
-        name: 'iguana',
-    },
-    {
-        name: 'snake',
-    },
-];
+// const animals = [
+//     {
+//         name: 'owl',
+//     },
+//     {
+//         name: 'bunny',
+//     },
+//     {
+//         name: 'horse',
+//     },
+//     {
+//         name: 'iguana',
+//     },
+//     {
+//         name: 'snake',
+//     },
+// ];
 
 function cameraFlashAnimation() {
     cameraFlash.style.display = 'block';
@@ -53,6 +53,7 @@ const animatedMarker = document.querySelector('#animated-marker');
 AFRAME.registerComponent('owl', {
     init: function () {
         const aEntity = document.querySelector('#owl');
+        const animatedMarker = document.querySelector('#animated-marker');
 
         animatedMarker.addEventListener('click', function (ev, target) {
             const intersectedElement =
@@ -85,7 +86,7 @@ AFRAME.registerComponent('raccoon', {
                 score = score += 1;
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
-                cameraFlash = 'block';
+                    document.getElementById('cameraflash').style.display = 'block';
                 setTimeout(function () {
                     document.getElementById('cameraflash').style.display =
                         'none';
@@ -326,6 +327,6 @@ function openNav() {
             finalScore.innerHTML = score + ' ANIMALS';
         }
     } else {
-        finalScore.innerHTML = 'ALL THE ANIMALS';
+        finalScore.innerHTML = score + 'ALL THE ANIMALS';
     }
 }
