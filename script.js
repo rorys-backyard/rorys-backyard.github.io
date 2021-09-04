@@ -31,7 +31,7 @@ const maximumAnimals = 9;
 function cameraFlashAnimation() {
     cameraFlash.style.display = 'block';
 
-    setTimeout(function () {
+    setTimeout(function() {
         cameraFlash.style.display = 'none';
     }, 100);
 }
@@ -51,11 +51,11 @@ function cameraFlashAnimation() {
 const animatedMarker = document.querySelector('#animated-marker');
 
 AFRAME.registerComponent('owl', {
-    init: function () {
+    init: function() {
         const aEntity = document.querySelector('#owl');
         const animatedMarker = document.querySelector('#animated-marker');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -72,11 +72,11 @@ AFRAME.registerComponent('owl', {
 });
 
 AFRAME.registerComponent('raccoon', {
-    init: function () {
+    init: function() {
         const aEntity = document.querySelector('#raccoon');
         const animatedMarker = document.querySelector('#animated-marker');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -86,8 +86,8 @@ AFRAME.registerComponent('raccoon', {
                 score = score += 1;
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
-                    document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                document.getElementById('cameraflash').style.display = 'block';
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -97,11 +97,11 @@ AFRAME.registerComponent('raccoon', {
 });
 
 AFRAME.registerComponent('skunk', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#skunk');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -112,7 +112,7 @@ AFRAME.registerComponent('skunk', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -122,11 +122,11 @@ AFRAME.registerComponent('skunk', {
 });
 
 AFRAME.registerComponent('frog', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#frog');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -137,7 +137,7 @@ AFRAME.registerComponent('frog', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -147,11 +147,11 @@ AFRAME.registerComponent('frog', {
 });
 
 AFRAME.registerComponent('bobcat', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#bobcat');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -162,7 +162,7 @@ AFRAME.registerComponent('bobcat', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -172,11 +172,11 @@ AFRAME.registerComponent('bobcat', {
 });
 
 AFRAME.registerComponent('deer', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#deer');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -187,7 +187,7 @@ AFRAME.registerComponent('deer', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -197,11 +197,11 @@ AFRAME.registerComponent('deer', {
 });
 
 AFRAME.registerComponent('mockingbird', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#mockingbird');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -212,7 +212,7 @@ AFRAME.registerComponent('mockingbird', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -222,11 +222,11 @@ AFRAME.registerComponent('mockingbird', {
 });
 
 AFRAME.registerComponent('snake', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#snake');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -237,7 +237,7 @@ AFRAME.registerComponent('snake', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -247,11 +247,11 @@ AFRAME.registerComponent('snake', {
 });
 
 AFRAME.registerComponent('turtle', {
-    init: function () {
+    init: function() {
         const animatedMarker = document.querySelector('#animated-marker');
         const aEntity = document.querySelector('#turtle');
 
-        animatedMarker.addEventListener('click', function (ev, target) {
+        animatedMarker.addEventListener('click', function(ev, target) {
             const intersectedElement =
                 ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
@@ -262,7 +262,7 @@ AFRAME.registerComponent('turtle', {
                 document.getElementById('score').innerHTML =
                     'Animals Found: ' + score;
                 document.getElementById('cameraflash').style.display = 'block';
-                setTimeout(function () {
+                setTimeout(function() {
                     document.getElementById('cameraflash').style.display =
                         'none';
                 }, 100);
@@ -271,7 +271,7 @@ AFRAME.registerComponent('turtle', {
     },
 });
 
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 2;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
