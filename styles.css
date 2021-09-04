@@ -10,7 +10,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .landing-page {
     height: 100%;
     width: 100%;
@@ -240,8 +240,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    height: 510px;
-    width: 425px;
+    height: 450px;
+    width: 375px;
     background-color: transparent;
     border: 1px solid rgb(190, 190, 190);
     box-shadow: 5px 5px 10px black;
@@ -284,13 +284,14 @@ body {
     text-align: left;
     height: 100%;
     width: 100%;
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Architects Daughter', cursive;
     font-size: 20px;
 }
 
 .polaroid-name {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Architects Daughter', cursive;
     text-align: center;
+    font-size: 24px;
 }
 
 .polaroid {
@@ -304,7 +305,7 @@ body {
     text-align: center;
     position: relative;
     margin-top: 20px;
-    margin-bottom: auto;
+    margin-bottom: 15px;
 }
 
 @media screen and (max-height: 450px) {
