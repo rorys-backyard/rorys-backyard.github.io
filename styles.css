@@ -15,7 +15,6 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 .landing-page {
     height: 100%;
     width: 100%;
@@ -263,7 +262,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
-.polaroid-container:hover .polaroid-inner {
+.polaroid-container:active .polaroid-inner {
     transform: rotateY(180deg);
 }
 
