@@ -76,8 +76,8 @@ body {
 .cloud {
   font-weight: 500; 
   text-align: center; 
-  height: 100px;
-  width: 200px;
+  height: auto;
+  width: 275px;
   margin-top: 25px;
   margin-bottom: auto;
   margin-right: auto; 
@@ -90,7 +90,7 @@ body {
   font-style: italic; 
   text-align: center; 
   margin-left: 25px; 
-  margin-right: 100px; 
+  margin-right: 25px; 
   text-shadow: 0px 0px 5px black; 
   color: white;
 }
