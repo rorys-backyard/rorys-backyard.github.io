@@ -31,12 +31,12 @@ body {
   display: block; 
   margin-top: 28px;
   margin-bottom: auto;
-  margin-left: 125px; 
+  margin-left: 100px; 
   margin-right: auto; 
   max-width: auto; 
   height: 10%;
   font-family: Gagalin;
-  font-size: 44px;
+  font-size: 34px;
   text-shadow: 0px 0px 15px white;
 }
 
@@ -46,7 +46,7 @@ body {
   margin-bottom: auto;
   margin-left: 5px;
   margin-right: auto;
-  max-width: 105px;
+  max-width: 80px;
   max-height: auto;
 }
 
@@ -74,12 +74,12 @@ body {
 .cloud {
   font-weight: 500; 
   text-align: center; 
-  height: 125px;
-  width: 250px;
+  height: 100px;
+  width: 200px;
   margin-top: 25px;
   margin-bottom: auto;
   margin-right: auto; 
-  margin-left: 100px; 
+  margin-left: 15px; 
 }
 
 #borderimg1 {
