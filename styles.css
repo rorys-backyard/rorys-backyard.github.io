@@ -243,6 +243,7 @@ body {
 .polaroid-container-right {
     margin-left: 10px;
     margin-right: 5%;
+    margin-bottom: 10px;
     float: right;
     height: 180px;
     width: 150px;
@@ -254,6 +255,7 @@ body {
 .polaroid-container-left {
     margin-left: 5%;
     margin-right: 30px;
+    margin-bottom: 10px;
     float: left;
     height: 180px;
     width: 150px;
