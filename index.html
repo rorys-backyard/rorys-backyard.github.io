@@ -8,38 +8,31 @@
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-  
 </head>
 
-<body style='margin : 0px; overflow: clip;'>
-  <div id="myNav" class="overlay">
-    <img src="assets/LandingPage/RBY.png"
-      style='position: relative; display: block; margin-left: auto; margin-right: auto; margin-top: 15px; max-width: auto; height: 10%;'>
-    <img src="assets/LandingPage/bottomborder.png" style='z-index: -5; position: absolute; bottom: 0px; width: 100%;'>
-    <h1
-      style='font-family: Gagalin; text-align: center; font-size: 30px; margin-bottom: 0px; font-style: italic; font-weight: 900; text-shadow: 0px -5px 10px black;'>
-      HIDDEN IN PLAIN SIGHT
+<body>
+  <div id="myNav" class="landing-page">
+    <img class="company-logo" src="assets/LandingPage/LCS.png">
+    <h1 class="exhibit">
+    RORY'S BACKYARD
     </h1>
-    <h1
-      style='text-align: center; font-size: 28px; margin-top: 0px; font-family:Impact; text-shadow: 0px 4px 10px black;'>
-      AUGMENTED REALITY GAME
-    </h1>
-    <img src='assets/LandingPage/magnifyingGlass.png'
-      style='float: right; position: relative; max-height: auto; max-width: 100px; display: block; margin-left: auto; margin-right: 0px'>
-    <p style='font-weight: 800; text-align: center; margin-right: 100px; margin-left: 20px; font-size: 18px; font-family: Gagalin;'>
-          CAN YOU FIND ALL 9 HIDDEN ANIMALS?<br>
-        </p>
-        <p style='font-family: Montserrat, sans-serif; font-size: 14px; text-align: left; margin-left: 25px; margin-right: 100px; text-shadow: 0px 0px 5px
+    <h2 class='game-title'>
+    HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
+    </h2>
+    <img src='assets/cloud.png' class='cloud'>
+    <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
+<p style='font-family: Montserrat, sans-serif; font-size: 14px; text-align: left; margin-left: 25px; margin-right: 100px; text-shadow: 0px 0px 5px
       black; color: white;'>
       Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from
       predators. See if you can find all 9 hidden animals in less than a minute!
     </p>
     <p
-      style='margin-right: 10px; margin-left: 45%; font-size: 15px; text-align: left; color: white; text-shadow: 0px 0px 3px black;'>
-      Follow the easy steps below to play:<br>1. Locate the animals on screen.<br>2. Center the animal on your
-      screen.<br>3. Wait until you see a flash.<br><br>
-      <a id="startbtn" href="javascript:void(0)" class="closebtn" onclick="closeNav(), startTimer()">START!</a>
-    </p>
+    style='margin-right: 10px; margin-left: 45%; font-size: 15px; text-align: left; color: white; text-shadow: 0px 0px 3px black;'>
+    Follow the easy steps below to play:<br>1. Locate the animals on screen.<br>2. Center the animal on your
+    screen.<br>3. Wait until you see a flash.<br><br>
+    <a id="startbtn" href="javascript:void(0)" class="closebtn" onclick="closeNav(), startTimer()">START!</a>
+  </p>
+  <img src="assets/LandingPage/bottomborder.png" style='z-index: -5; position: absolute; bottom: 0px; width: 100%;'>
   </div>
   <div class="timer">
     <span id="timer" class="timer">1:00</span>
