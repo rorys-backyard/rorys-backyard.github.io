@@ -1,17 +1,13 @@
 let score = 0;
 const finalScore = document.querySelector('#finalscore');
 const maximumAnimals = 9;
-
 const TIME_LIMIT = 60;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
-
 const cameraFlash = document.getElementById('cameraflash');
-
 const animatedMarker = document.querySelector('#animated-marker');
-
-
+const cameraCircle = document.querySelector('#circle');
 
 function closeNav() {
     document.getElementById('myNav').style.width = '0%';
@@ -53,11 +49,6 @@ function formatTime(time) {
     return `${minutes}:${seconds}`;
 }
 
-function calculateTimeFraction() {
-    const rawTimeFraction = timeLeft / TIME_LIMIT;
-    return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
-}
-
 function openNav() {
     document.getElementById('endgame').style.width = '100%';
 
@@ -76,17 +67,25 @@ function animalFound() {
     score = score += 1;
     document.querySelector('#score').innerHTML = 'Animals Found: ' + score;
     cameraFlash.style.display = 'block';
+    cameraCircle.style.border = '4px solid black';
     setTimeout(function() {
         cameraFlash.style.display = 'none';
     }, 100);
 }
 
+function cameraIndicator() {
+    cameraCircle.style.border = '4px solid lightgreen';
+};
+
 AFRAME.registerComponent('owl', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const owl = document.querySelector('#owl');
-            owl.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                owl.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -95,8 +94,11 @@ AFRAME.registerComponent('raccoon', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const raccoon = document.querySelector('#raccoon');
-            raccoon.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                raccoon.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -105,8 +107,11 @@ AFRAME.registerComponent('bobcat', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const bobcat = document.querySelector('#bobcat');
-            bobcat.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                bobcat.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -115,8 +120,11 @@ AFRAME.registerComponent('deer', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const deer = document.querySelector('#deer');
-            deer.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                deer.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -125,8 +133,11 @@ AFRAME.registerComponent('frog', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const frog = document.querySelector('#frog');
-            frog.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                frog.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -135,8 +146,11 @@ AFRAME.registerComponent('snake', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const snake = document.querySelector('#snake');
-            snake.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                snake.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -145,8 +159,11 @@ AFRAME.registerComponent('skunk', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const skunk = document.querySelector('#skunk');
-            skunk.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                skunk.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -155,8 +172,11 @@ AFRAME.registerComponent('turtle', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const turtle = document.querySelector('#turtle');
-            turtle.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                turtle.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
@@ -165,8 +185,11 @@ AFRAME.registerComponent('mockingbird', {
     init: function() {
         this.el.addEventListener('click', (e) => {
             const mockingbird = document.querySelector('#mockingbird');
-            mockingbird.remove();
-            animalFound();
+            cameraIndicator();
+            setTimeout(function() {
+                mockingbird.remove();
+                animalFound();
+            }, 1500);
         })
     },
 });
