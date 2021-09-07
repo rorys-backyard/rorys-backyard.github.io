@@ -309,7 +309,7 @@ body {
 
 .survey-link {
     text-align: center;
-    position: relative;
+    position: static;
     margin-top: 20px;
     margin-bottom: 15px;
 }

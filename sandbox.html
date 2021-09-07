@@ -1,12 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 </head>
+
 <body>
-  
+    <div id="myNav" class="landing-page">
+        <img class="company-logo" src="assets/LandingPage/LCS.png">
+        <h1 class="exhibit">
+            RORY'S BACKYARD
+        </h1>
+        <h2 class='game-title'>
+            HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
+        </h2>
+        <img src='assets/cloud.png' class='cloud'>
+        <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
+        <p class='game-info'>
+            Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
+        </p>
+        <p class='directions'>
+            <u>TO PLAY</u><br>1. Locate an animal<br>2. Center the animal<br>3. Wait until you see a flash!<br><br>
+            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='closeNav(), startTimer()'>START!</button>
+        </p>
+        <img src="assets/LandingPage/bottomborder.png" class='grass'>
+    </div>
+    <div class="timer">
+        <span id="timer" class="timer">1:00</span>
+    </div>
+
+    <div class="score">
+        <div class="score">
+            <span id="score" class="score">Animals Found: 0</span>
+        </div>
+    </div>
+
+    <object id="cameralens" class="cameralens">
+    <div class="circle" id="circle"></div>
+  </object>
+
+    <object id="cameraflash" class="cameraflash"></object>
+
+
+    <div id="endgame" class="endgame">
+        <a href="javascript:void(0)"></a>
+        <img class="company-logo" src="assets/LandingPage/LCS.png">
+        <h1 class="exhibit">
+            RORY'S BACKYARD
+        </h1>
+        <p class="endgame-content">
+            <a>YOU FOUND</a>
+            <span id="finalscore">0</span>
+            <a>IN RORY'S BACKYARD!</a>
+        </p>
+        <h2 class='game-info'>
+            CHECK OUT RORY'S ALBUM BELOW TO SEE HIS NOTES ABOUT EACH SPECIES
+        </h2>
+
+        <div class='notebook-paper-left'>
+            <div class='polaroid-container-right'>
+                <img src='assets/ScorePage/turtleinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>EASTERN BOX TURTLE</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Vulnerable</li>
+                <li><b>Ecological Role:</b> Box turtles act as seed dispersers for many plants.</li>
+                <li><b>Threats:</b> Habitat loss, car collisions, and the taking of wild individuals to supply the pet trade.</li>
+                <li><b>Ways You Can Help:</b> Research any animal you are interested in owning as a pet before you buy it.</li>
+            </ul>
+        </div>
+
+        <div class='notebook-paper-right'>
+            <div class='polaroid-container-left'>
+                <img src='assets/ScorePage/owlinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>GREAT HORNED OWL</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> As top predators, they help control the populations of many other animals.</li>
+                <li><b>Threats:</b> Pesticides, car collisions, habitat loss, net entanglement, and illegal hunting.</li>
+                <li><b>Ways You Can Help:</b> Use natural pest controls and take down any outdoor nets not in use.</li>
+            </ul>
+        </div>
+
+        <div class='notebook-paper-left'>
+            <div class='polaroid-container-right'>
+                <img src='assets/ScorePage/froginsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>GREEN TREEFROG</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> As indicator species, green treefrogs can alert humans to negative environmental conditions.
+                </li>
+                <li><b>Threats:</b> Competition with the nonnative Cuban Treefrog.</li>
+                <li><b>Ways You Can Help:</b> Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-right'>
+            <div class='polaroid-container-left'>
+                <img src='assets/ScorePage/bobcatinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>NORTH AMERICAN BOBCAT</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> Bobcats are apex predators that keep small mammal and bird populations stable.</li>
+                <li><b>Threats:</b> Hunting from humans and habitat loss.</li>
+                <li><b>Ways You Can Help:</b> Spread the word that bobcats generally stay away from people and that their habitat needs saving.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-left'>
+            <div class='polaroid-container-right'>
+                <img src='assets/ScorePage/mockingbirdinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>NORTHERN MOCKINGBIRD</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> These birds help disperse seeds and also act as a natural form of pest control by consuming a large number of insects.</li>
+                <li><b>Threats:</b> Predation from domestic or feral cats, severe weather, and striking windows.</li>
+                <li><b>Ways You Can Help:</b> Keep your pet cat inside and place anti-collision decals on your windows to help minimize the amount of window strikes by birds.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-right'>
+            <div class='polaroid-container-left'>
+                <img src='assets/ScorePage/raccooninsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>RACCOON</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> Raccoons help control populations of their prey species, including rodents and insects.
+                </li>
+                <li><b>Threats:</b> Humans who view the animals as pests.</li>
+                <li><b>Ways You Can Help:</b> Make sure outdoor garbage lids are secure, remove any fallen fruit from trees or bird seed from feeders at night, and never feed any wild animal.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-left'>
+            <div class='polaroid-container-right'>
+                <img src='assets/ScorePage/snakeinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>RED RAT SNAKE</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> Red rat or corn snakes help keep rodent populations under control.</li>
+                <li><b>Threats:</b> Habitat destruction, misidentification as a venomous snake, and pet trade.</li>
+                <li><b>Ways You Can Help:</b> If you come across any wild snake, leave it alone and give it space. Encourage your family and friends to do the same.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-right'>
+            <div class='polaroid-container-left'>
+                <img src='assets/ScorePage/skunkinsert.png' class='polaroid'>
+                <h1 class='polaroid-name'>STRIPED SKUNK</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> Skunks are a natural pest control as they consume a variety of insects.</li>
+                <li><b>Threats:</b> Skunk specific disease outbreaks and humans that view them as pests.</li>
+                <li><b>Ways You Can Help:</b> Spread the word that skunks play an important part in our environment.</li>
+            </ul>
+        </div>
+        <div class='notebook-paper-left'>
+            <div class='polaroid-container-right'>
+                <img src='assets/ScorePage/deerinsert.jpg' class='polaroid'>
+                <h1 class='polaroid-name'>WHITE-TAILED DEER</h1>
+            </div>
+            <ul>
+                <li><b>Conservation Status:</b> Least Concern</li>
+                <li><b>Ecological Role:</b> Considered a keystone herbivore, white-tail deer can have a dramatic effect on the plants and predators in their areas.</li>
+                <li><b>Threats:</b> Car collisions, habitat loss, and humans who view the animals as pests.</li>
+                <li><b>Ways You Can Help:</b> Look for alternative landscaping options for your yard like plants that aren’t as tasty to deer.</li>
+            </ul>
+        </div>
+
+        <p class='survey-link'>We value your feedback!
+            <a href="https://www.google.com/">Click Here</a> to tell us about your experience.</p>
+    </div>
+
+    <script src="sandbox.js"></script>
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' light='type:directional; castShadow:true' positon='1 1 1'>
+        <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker"> -->
+        <a-marker markerhandler preset='hiro' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker">
+            <a-image owl id="owl" src="assets/owl.png" alt="Great Horned Owl" rotation="270 0 0" scale="0.25 0.25 0.25" position="0.5 0 0" shadow='receive: true'></a-image>
+            <a-image bobcat id="bobcat" src="assets/bobcat.png" alt="Bobcat" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 0"></a-image>
+            <a-image deer id="deer" src="assets/deer.png" alt="White-Tailed Deer" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 0.5"></a-image>
+            <a-image frog id="frog" src="assets/greentreefrog.png" alt="Green Tree Frog" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 -0.5"></a-image>
+            <a-image mockingbird id="mockingbird" src="assets/mockingbird.png" alt="Mockingbird" rotation="270 0 0" scale="0.25 0.25 0" position="0.5 0 0.5"></a-image>
+            <a-image raccoon id="raccoon" src="assets/raccoon.png" alt="Raccoon" rotation="270 0 0" scale="0.25 0.25 0" position="0.5 0 -0.5"></a-image>
+            <a-image snake id="snake" src="assets/redratsnake.png" alt="Red Rat Snake" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 0.5"></a-image>
+            <a-image skunk id="skunk" src="assets/skunk.png" alt="Skunk" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 -0.5"></a-image>
+            <a-image turtle id="turtle" src="assets/boxturtle.png" alt="Box Turtle" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 0"></a-image>
+        </a-marker>
+        <a-entity camera>
+            <a-entity cursor='fuse: true; fuseTimeout: 500' position='0 0 -1'>
+            </a-entity>
+        </a-entity>
+    </a-scene>
 </body>
+
 </html>
