@@ -1,7 +1,7 @@
 body {
     font-family: Montserrat, sans-serif;
     margin: 0px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 @font-face {
@@ -314,13 +314,4 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
+@media screen and (max-height: 450px) {}
