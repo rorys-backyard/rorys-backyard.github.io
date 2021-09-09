@@ -1,4 +1,3 @@
-
 let score = 0;
 const maximumAnimals = 9;
 const TIME_LIMIT = 60;
@@ -186,9 +185,4 @@ function startGame() {
 
 startBtn.addEventListener('click', () => {
     startGame();
-});
-
-// Function used to get animals data into JS objects.
-$.getJSON('./assets/data/animals.json', (data) => {
-    console.log(data)
 });
