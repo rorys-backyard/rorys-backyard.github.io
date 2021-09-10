@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 </head>
 
 <body>
-    <div id="myNav" class="landing-page">
+    <div id="landingPage" class="landing-page">
         <img class="company-logo" src="assets/LandingPage/LCS.png">
         <h1 class="exhibit">
             RORY'S BACKYARD
@@ -25,7 +25,7 @@
             Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
         </p>
         <p class='directions'>
-            <u>TO PLAY</u><br>1. Locate an animal<br>2. Center the animal<br>3. Wait until you see a flash!<br><br>
+            <u>TO PLAY</u><br>1. LOCATE AN ANIMAL ON SCREEN<br>2. CENTER THE ANIMAL IN THE RETICAL<br>3. WAIT UNTIL YOU SEE A FLASH!<br><br>
             <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='closeNav(), startTimer()'>START!</button>
         </p>
         <img src="assets/LandingPage/bottomborder.png" class='grass'>
@@ -179,11 +179,11 @@
             <a href="https://www.google.com/">Click Here</a> to tell us about your experience.</div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' device-orientation-permission-ui="enabled: false">
         <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'> -->
         <a-marker markerhandler preset='hiro' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'>
-            <a-image owl id="owl" src="assets/owl.png" alt="Great Horned Owl" rotation="270 0 0" scale="0.25 0.25 0.25" position="0.5 0 0" shadow='receive: true'></a-image>
+            <a-image owl id="owl" src="assets/owl.png" alt="Great Horned Owl" rotation="270 0 0" scale="0.25 0.25 0.25" position="0.5 0 0"></a-image>
             <a-image bobcat id="bobcat" src="assets/bobcat.png" alt="Bobcat" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 0"></a-image>
             <a-image deer id="deer" src="assets/deer.png" alt="White-Tailed Deer" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 0.5"></a-image>
             <a-image frog id="frog" src="assets/greentreefrog.png" alt="Green Tree Frog" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 -0.5"></a-image>
