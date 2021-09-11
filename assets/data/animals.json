@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Eastern Box Turtle",
         "id": "eastern-box-turtle",
         "conservationStatus": "Vulnerable",
@@ -35,7 +34,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "0 0 0.5"
+            "position": "1 0 0.5"
         }
     },
     {
@@ -100,7 +99,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "0 0 0"
+            "position": "1 0 0"
         }
     },
     {
@@ -113,7 +112,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "0 0 -0.5"
+            "position": "1 0 -0.5"
         }
     }
 ]
