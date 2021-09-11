@@ -52,7 +52,7 @@
         }
     },
     {
-        "name": "Raccoon",
+        "name": "Racoon",
         "id": "racoon",
         "conservationStatus": "Least Concern",
         "echologicalRoles": "Raccoons help control populations of their prey species, including rodents and insects.",
@@ -74,7 +74,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-0.5 0 -0.5"
+            "position": "0.5 0 -0.5"
         }
     },
     {
