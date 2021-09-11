@@ -1,3 +1,9 @@
+// First step is to get animals data
+// Select notebook element
+// Loop throught animals array
+// Next to create multiple elements, add attributes/text/etc. and append into each other
+// Append final pieces to notebook element
+
 $.getJSON('./assets/data/animals.json', (animals) => {
     const notebook = document.querySelector('#notebook');
 
