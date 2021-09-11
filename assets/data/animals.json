@@ -6,9 +6,11 @@
         "echologicalRoles": "Box turtles act as seed dispersers for many plants.",
         "threats": "Habitat loss, car collisions, and the taking of wild individuals to supply the pet trade.",
         "waysYouCanHelp": "Research any animal you are interested in owning as a pet before you buy it.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0.25",
-        "position": "0.5 0 0"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0.25",
+            "position": "0.5 0 0"
+        }
     },
     {
         "name": "Great Horned Owl",
@@ -17,9 +19,11 @@
         "echologicalRoles": "As top predators, they help control the populations of many other animals.",
         "threats": "Pesticides, car collisions, habitat loss, net entanglement, and illegal hunting.",
         "waysYouCanHelp": "Use natural pest controls and take down any outdoor nets not in use.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "-0.5 0 0"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "-0.5 0 0"
+        }
     },
     {
         "name": "North American Bobcat",
@@ -28,9 +32,11 @@
         "echologicalRoles": "Bobcats are apex predators that keep small mammal and bird populations stable.",
         "threats": "Hunting from humans and habitat loss.",
         "waysYouCanHelp": "Spread the word that bobcats generally stay away from people and that their habitat needs saving.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "0 0 0.5"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "0 0 0.5"
+        }
     },
     {
         "name": "Norther Mockingbird",
@@ -39,9 +45,11 @@
         "echologicalRoles": "These birds help disperse seeds and also act as a natural form of pest control by consuming a large number of insects.",
         "threats": "Predation from domestic or feral cats, severe weather, and striking windows.",
         "waysYouCanHelp": "Keep your pet cat inside and place anti-collision decals on your windows to help minimize the amount of window strikes by birds.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "0.5 0 0.5"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "0.5 0 0.5"
+        }
     },
     {
         "name": "Raccoon",
@@ -50,9 +58,11 @@
         "echologicalRoles": "Raccoons help control populations of their prey species, including rodents and insects.",
         "threats": "Humans who view the animals as pests.",
         "waysYouCanHelp": "Make sure outdoor garbage lids are secure, remove any fallen fruit from trees or bird seed from feeders at night, and never feed any wild animal.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "-0.5 0 0.5"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "-0.5 0 0.5"
+        }
     },
     {
         "name": "Red Rat Snake",
@@ -61,9 +71,11 @@
         "echologicalRoles": "Red rat or corn snakes help keep rodent populations under control.",
         "threats": "Habitat destruction, misidentification as a venomous snake, and pet trade.",
         "waysYouCanHelp": "If you come across any wild snake, leave it alone and give it space.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "-0.5 0 -0.5"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "-0.5 0 -0.5"
+        }
     },
     {
         "name": "Striped Skunk",
@@ -72,9 +84,11 @@
         "echologicalRoles": "Skunks are a natural pest control as they consume a variety of insects.",
         "threats": "Skunk specific disease outbreaks and humans that view them as pests.",
         "waysYouCanHelp": "Spread the word that skunks play an important part in our environment.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "-0.5 0 -0.5"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "-0.5 0 -0.5"
+        }
     },
     {
         "name": "White-Tailed Deer",
@@ -83,8 +97,23 @@
         "echologicalRoles": "Considered a keystone herbivore, white-tail deer can have a dramatic effect on the plants and predators in their areas.",
         "threats": "Car collisions, habitat loss, and humans who view the animals as pests.",
         "waysYouCanHelp": "Look for alternative landscaping options for your yard like plants that aren’t as tasty to deer.",
-        "rotation": "270 0 0",
-        "scale": "0.25 0.25 0",
-        "position": "0 0 0"
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "0 0 0"
+        }
+    },
+    {
+        "name": "Green Treefrog",
+        "id": "green-treefrog",
+        "conservationStatus": "Least Concern",
+        "echologicalRoles": " As indicator species, green treefrogs can alert humans to negative environmental conditions.",
+        "threats": "Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day.",
+        "waysYouCanHelp": "options",
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "0 0 -0.5"
+        }
     }
 ]

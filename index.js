@@ -71,122 +71,122 @@ function cameraIndicator() {
     cameraCircle.style.border = '4px solid lightgreen';
 };
 
-AFRAME.registerComponent('owl', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const owl = document.querySelector('#owl');
-            cameraIndicator();
-            setTimeout(function() {
-                owl.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('owl', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const owl = document.querySelector('#owl');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 owl.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('raccoon', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const raccoon = document.querySelector('#raccoon');
-            cameraIndicator();
-            setTimeout(function() {
-                raccoon.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('raccoon', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const raccoon = document.querySelector('#raccoon');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 raccoon.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('bobcat', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const bobcat = document.querySelector('#bobcat');
-            cameraIndicator();
-            setTimeout(function() {
-                bobcat.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('bobcat', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const bobcat = document.querySelector('#bobcat');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 bobcat.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('deer', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const deer = document.querySelector('#deer');
-            cameraIndicator();
-            setTimeout(function() {
-                deer.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('deer', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const deer = document.querySelector('#deer');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 deer.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('frog', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const frog = document.querySelector('#frog');
-            cameraIndicator();
-            setTimeout(function() {
-                frog.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('frog', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const frog = document.querySelector('#frog');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 frog.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('snake', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const snake = document.querySelector('#snake');
-            cameraIndicator();
-            setTimeout(function() {
-                snake.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('snake', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const snake = document.querySelector('#snake');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 snake.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('skunk', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const skunk = document.querySelector('#skunk');
-            cameraIndicator();
-            setTimeout(function() {
-                skunk.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('skunk', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const skunk = document.querySelector('#skunk');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 skunk.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('turtle', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const turtle = document.querySelector('#turtle');
-            cameraIndicator();
-            setTimeout(function() {
-                turtle.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('turtle', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const turtle = document.querySelector('#turtle');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 turtle.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
-AFRAME.registerComponent('mockingbird', {
-    init: function() {
-        this.el.addEventListener('click', (e) => {
-            const mockingbird = document.querySelector('#mockingbird');
-            cameraIndicator();
-            setTimeout(function() {
-                mockingbird.remove();
-                animalFound();
-            }, 1500);
-        })
-    },
-});
+// AFRAME.registerComponent('mockingbird', {
+//     init: function() {
+//         this.el.addEventListener('click', (e) => {
+//             const mockingbird = document.querySelector('#mockingbird');
+//             cameraIndicator();
+//             setTimeout(function() {
+//                 mockingbird.remove();
+//                 animalFound();
+//             }, 1500);
+//         })
+//     },
+// });
 
 const animals = [{
         name: 'Eastern Box Turtle',
