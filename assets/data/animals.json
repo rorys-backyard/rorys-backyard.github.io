@@ -8,7 +8,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0.25",
-            "position": "1 0 0"
+            "position": "1 0 1"
         }
     },
     {
@@ -21,7 +21,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-1 0 0"
+            "position": "0.5 0 0.5"
         }
     },
     {
@@ -34,7 +34,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "1 0 0.5"
+            "position": "1 0 0"
         }
     },
     {
@@ -47,7 +47,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "1 0 1"
+            "position": "0.5 0 -0.5"
         }
     },
     {
@@ -60,7 +60,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-1 0 1"
+            "position": "1 0 -1"
         }
     },
     {
@@ -73,7 +73,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "1 0 -1"
+            "position": "-1 0 1"
         }
     },
     {
@@ -86,7 +86,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-1 0 -1"
+            "position": "-0.5 0 0.5"
         }
     },
     {
@@ -99,7 +99,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "1 0 0"
+            "position": "-1 0 0"
         }
     },
     {
@@ -112,7 +112,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "1 0 -0.5"
+            "position": "-0.5 0 -0.5"
         }
     }
 ]
