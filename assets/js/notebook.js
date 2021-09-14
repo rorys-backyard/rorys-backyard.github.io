@@ -7,17 +7,25 @@
 $.getJSON('./assets/data/animals.json', (animals) => {
     const notebook = document.querySelector('#notebook');
 
-    animals.forEach(animal => {
+    animals.forEach((animal) => {
         // This is the created element
         // <div></div>
-        const notebookPaperEl = document.createElement('div');
 
+        console.log({ animal });
+        const notebookPaperEl = document.createElement('div');
         // addAttribute('attribute', 'value');
         // Think about true/false, left/right
-        notebookPaperEl.addAttribute('class', 'notebook-paper')
+        notebookPaperEl.setAttribute('class', 'notebook-paper');
+        notebook.appendChild(notebookPaperEl);
+
+        const animalFacts = document.createElement('ul');
+        animalFacts.setAttribute('class', 'notebook-paper');
+        notebookPaperEl.appendChild(animalFacts);
+        const liEl = document.createElement('li');
+        liEl.setAttribute('class', 'notebook-paper');
 
         const polaroidContainerEl = document.createElement('div');
-        polaroidContainerEl.addAttribute('class', 'polaroid-container')
+        polaroidContainerEl.setAttribute('class', 'polaroid-container')
 
         // End Result
         // <div className="notebook-paper-left">
@@ -25,8 +33,13 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         //
         //     </div>
         // </div>
+
+        const imgEl = document.createElement('img');
+        imgEl.setAttribute('class', 'polaroid')
+            // imgEl.setAttribute('img', `assets/ScorePage/${id}.jpg`)
+
         notebookPaperEl.appendChild(polaroidContainerEl)
-    
+
         polaroidContainerEl.appendChild(imgEl)
     })
 });

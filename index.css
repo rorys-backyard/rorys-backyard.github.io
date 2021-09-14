@@ -192,11 +192,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -52px;
-    margin-left: -52px;
+    margin-top: -53px;
+    margin-left: -53px;
     width: 100px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 40px;
     border: 4px solid black;
 }
 
@@ -288,6 +288,20 @@ body {
     margin-top: 0px;
     margin-bottom: 15px;
     float: right;
+    padding-top: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+
+.notebook {
+    background-color: white;
+    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
+    box-shadow: 0px 0px 5px black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    float: left;
     padding-top: 10px;
     font-family: 'Architects Daughter', cursive;
     font-size: 16px;

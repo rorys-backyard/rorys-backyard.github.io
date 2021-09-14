@@ -46,8 +46,7 @@ $.getJSON('./assets/data/animals.json', (animals) => {
 
         const factsList = document.createElement('ul');
 
-        [
-            {
+        [{
                 header: 'Conservation Status',
                 fact: conservationStatus,
             },

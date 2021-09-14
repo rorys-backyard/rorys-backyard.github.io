@@ -4,30 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <!-- <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script> -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body style='overflow: hidden;'>
-    <a-scene embedded arjs positon='1 1 1'>
-        <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker"> -->
-        <a-marker markerhandler preset='hiro'>
-            <a-image owl id="owl" src="assets/owl.png" alt="Great Horned Owl" rotation="270 0 0" scale="0.25 0.25 0.25" position="0.5 0 0" shadow='receive: true'></a-image>
-            <a-image bobcat id="bobcat" src="assets/bobcat.png" alt="Bobcat" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 0"></a-image>
-            <a-image deer id="deer" src="assets/deer.png" alt="White-Tailed Deer" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 0.5"></a-image>
-            <a-image frog id="frog" src="assets/greentreefrog.png" alt="Green Tree Frog" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 -0.5"></a-image>
-            <a-image mockingbird id="mockingbird" src="assets/mockingbird.png" alt="Mockingbird" rotation="270 0 0" scale="0.25 0.25 0" position="0.5 0 0.5"></a-image>
-            <a-image raccoon id="raccoon" src="assets/raccoon.png" alt="Raccoon" rotation="270 0 0" scale="0.25 0.25 0" position="0.5 0 -0.5"></a-image>
-            <a-image snake id="snake" src="assets/redratsnake.png" alt="Red Rat Snake" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 0.5"></a-image>
-            <a-image skunk id="skunk" src="assets/skunk.png" alt="Skunk" rotation="270 0 0" scale="0.25 0.25 0" position="-0.5 0 -0.5"></a-image>
-            <a-image turtle id="turtle" src="assets/boxturtle.png" alt="Box Turtle" rotation="270 0 0" scale="0.25 0.25 0" position="0 0 0"></a-image>
-        </a-marker>
-        <a-entity camera>
-            <a-entity cursor='fuse: true; fuseTimeout: 500' position='0 0 -1'>
-            </a-entity>
-        </a-entity>
-    </a-scene>
+<body>
+    <h1>Wish me luck!</h1>
+    <div class='notebook' id='notebook'>
+
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./assets/js/notebook.js"></script>
 
 </html>
