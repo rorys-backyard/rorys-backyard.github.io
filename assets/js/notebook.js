@@ -6,10 +6,9 @@
 
 $.getJSON('./assets/data/animals.json', (animals) => {
     const notebook = document.querySelector('#notebook');
-    const aImage = document.querySelector('#animated-marker');
 
     animals.forEach((animal) => {
-        console.log({ animal });
+        // console.log({ animal });
 
         const notebookPaper = document.createElement('div');
         notebookPaper.setAttribute('class', 'notebook-paper-right');
@@ -38,22 +37,23 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         checkBox.appendChild(greenCheckMark);
         greenCheckMark.src = 'assets/ScorePage/green-check-mark.png';
 
-        console.log(aImage);
-
         const animalFacts = document.createElement('ul');
+        const animalFactHeaders = ['CONSERVATION STATUS: ', 'ECOLOGICAL ROLES: ', 'THREATS ', 'WAYS YOU CAN HELP: '];
+
         const conservationStatus = document.createElement('li');
         const ecologicalRoles = document.createElement('li');
         const threats = document.createElement('li');
         const waysYouCanHelp = document.createElement('li');
+
         notebookPaper.appendChild(animalFacts);
         animalFacts.appendChild(conservationStatus);
         animalFacts.appendChild(ecologicalRoles);
         animalFacts.appendChild(threats);
         animalFacts.appendChild(waysYouCanHelp);
-        conservationStatus.appendChild(document.createTextNode('Conservation Status: ' + animal.conservationStatus));
-        ecologicalRoles.appendChild(document.createTextNode('Ecological Roles: ' + animal.ecologicalRoles));
-        threats.appendChild(document.createTextNode('Threats: ' + animal.threats));
-        waysYouCanHelp.appendChild(document.createTextNode('Ways You Can Help: ' + animal.waysYouCanHelp));
+        conservationStatus.appendChild(document.createTextNode(animalFactHeaders[0] + animal.conservationStatus));
+        ecologicalRoles.appendChild(document.createTextNode(animalFactHeaders[1] + animal.ecologicalRoles));
+        threats.appendChild(document.createTextNode(animalFactHeaders[2] + animal.threats));
+        waysYouCanHelp.appendChild(document.createTextNode(animalFactHeaders[3] + animal.waysYouCanHelp));
     })
 })
 

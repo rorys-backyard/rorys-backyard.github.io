@@ -4,16 +4,16 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         console.log({ animal });
 
         AFRAME.registerComponent(animal.id, {
-            init: function () {
+            init: function() {
                 this.el.addEventListener('click', (e) => {
                     const animaleEl = document.querySelector(`#${animal.id}`);
 
                     cameraIndicator();
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         animaleEl.remove();
-
                         animalFound();
+                        checkOff();
                     }, 1500);
                 });
             },

@@ -339,6 +339,7 @@ body {
 .green-check-mark {
     height: inherit;
     width: auto;
+    display: none;
 }
 
 .polaroid-container {
@@ -365,6 +366,10 @@ body {
     padding-left: 8%;
     padding-top: 8%;
     height: auto;
+}
+
+.animal-fact-headers {
+    font-weight: 900;
 }
 
 .survey-link {
