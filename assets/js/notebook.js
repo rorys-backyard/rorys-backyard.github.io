@@ -6,6 +6,7 @@
 
 $.getJSON('./assets/data/animals.json', (animals) => {
     const notebook = document.querySelector('#notebook');
+    const aImage = document.querySelector('#animated-marker');
 
     animals.forEach((animal) => {
         console.log({ animal });
@@ -27,6 +28,17 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         imageName.setAttribute('class', 'polaroid-name');
         polaroidContainer.appendChild(imageName);
         imageName.appendChild(document.createTextNode(animal.name));
+
+        const checkBox = document.createElement('div');
+        checkBox.setAttribute('class', 'check-container');
+        notebookPaper.appendChild(checkBox);
+
+        const greenCheckMark = document.createElement('img');
+        greenCheckMark.setAttribute('class', 'green-check-mark');
+        checkBox.appendChild(greenCheckMark);
+        greenCheckMark.src = 'assets/ScorePage/green-check-mark.png';
+
+        console.log(aImage);
 
         const animalFacts = document.createElement('ul');
         const conservationStatus = document.createElement('li');

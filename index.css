@@ -321,6 +321,26 @@ body {
     font-size: 16px;
 }
 
+.check-container {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    background-color: white;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    box-shadow: inset 0px 0px 4px black;
+}
+
+.green-check-mark {
+    height: inherit;
+    width: auto;
+}
+
 .polaroid-container {
     margin-left: 10px;
     margin-right: 5%;
