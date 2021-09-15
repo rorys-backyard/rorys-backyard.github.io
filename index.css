@@ -293,6 +293,20 @@ body {
     font-size: 16px;
 }
 
+.notebook-paper {
+    background-color: white;
+    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
+    box-shadow: 0px 0px 5px black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    float: left;
+    padding-top: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+
 .notebook {
     background-color: white;
     background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
@@ -305,6 +319,18 @@ body {
     padding-top: 10px;
     font-family: 'Architects Daughter', cursive;
     font-size: 16px;
+}
+
+.polaroid-container {
+    margin-left: 10px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    float: right;
+    height: 180px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: -5px 5px 10px black;
 }
 
 .polaroid-name {

@@ -8,38 +8,95 @@ $.getJSON('./assets/data/animals.json', (animals) => {
     const notebook = document.querySelector('#notebook');
 
     animals.forEach((animal) => {
-        // This is the created element
-        // <div></div>
-
         console.log({ animal });
-        const notebookPaperEl = document.createElement('div');
-        // addAttribute('attribute', 'value');
-        // Think about true/false, left/right
-        notebookPaperEl.setAttribute('class', 'notebook-paper');
-        notebook.appendChild(notebookPaperEl);
+
+        const notebookPaper = document.createElement('div');
+        notebookPaper.setAttribute('class', 'notebook-paper-right');
+        notebook.appendChild(notebookPaper);
+
+        const polaroidContainer = document.createElement('div');
+        polaroidContainer.setAttribute('class', 'polaroid-container');
+        notebookPaper.appendChild(polaroidContainer);
+
+        const imageEl = document.createElement('img');
+        imageEl.setAttribute('class', 'polaroid');
+        polaroidContainer.appendChild(imageEl);
+        imageEl.src = `assets/ScorePage/${animal.id}.jpg`;
+
+        const imageName = document.createElement('h1');
+        imageName.setAttribute('class', 'polaroid-name');
+        polaroidContainer.appendChild(imageName);
+        imageName.appendChild(document.createTextNode(animal.name));
 
         const animalFacts = document.createElement('ul');
-        animalFacts.setAttribute('class', 'notebook-paper');
-        notebookPaperEl.appendChild(animalFacts);
-        const liEl = document.createElement('li');
-        liEl.setAttribute('class', 'notebook-paper');
-
-        const polaroidContainerEl = document.createElement('div');
-        polaroidContainerEl.setAttribute('class', 'polaroid-container')
-
-        // End Result
-        // <div className="notebook-paper-left">
-        //     <div className="polaroid-container-right">
-        //
-        //     </div>
-        // </div>
-
-        const imgEl = document.createElement('img');
-        imgEl.setAttribute('class', 'polaroid')
-            // imgEl.setAttribute('img', `assets/ScorePage/${id}.jpg`)
-
-        notebookPaperEl.appendChild(polaroidContainerEl)
-
-        polaroidContainerEl.appendChild(imgEl)
+        const conservationStatus = document.createElement('li');
+        const ecologicalRoles = document.createElement('li');
+        const threats = document.createElement('li');
+        const waysYouCanHelp = document.createElement('li');
+        notebookPaper.appendChild(animalFacts);
+        animalFacts.appendChild(conservationStatus);
+        animalFacts.appendChild(ecologicalRoles);
+        animalFacts.appendChild(threats);
+        animalFacts.appendChild(waysYouCanHelp);
+        conservationStatus.appendChild(document.createTextNode('Conservation Status: ' + animal.conservationStatus));
+        ecologicalRoles.appendChild(document.createTextNode('Ecological Roles: ' + animal.ecologicalRoles));
+        threats.appendChild(document.createTextNode('Threats: ' + animal.threats));
+        waysYouCanHelp.appendChild(document.createTextNode('Ways You Can Help: ' + animal.waysYouCanHelp));
     })
-});
+})
+
+{
+    /* <div id="notebook">
+
+    <div class='notebook-paper-left'>
+        <div class='polaroid-container-right'>
+            <img src='assets/ScorePage/turtleinsert.jpg' class='polaroid'>
+            <h1 class='polaroid-name'>EASTERN BOX TURTLE</h1>
+        </div>
+        <ul>
+            <li><b>Conservation Status:</b> Vulnerable</li>
+            <li><b>Ecological Role:</b> Box turtles act as seed dispersers for many plants.</li>
+            <li><b>Threats:</b> Habitat loss, car collisions, and the taking of wild individuals to supply the pet trade.</li>
+            <li><b>Ways You Can Help:</b> Research any animal you are interested in owning as a pet before you buy it.</li>
+        </ul>
+    </div>
+    </div> */
+}
+
+
+
+//         // This is the created element
+//         // <div></div>
+
+//         console.log({ animal });
+//         const notebookPaperEl = document.createElement('div');
+//         // addAttribute('attribute', 'value');
+//         // Think about true/false, left/right
+//         notebookPaperEl.setAttribute('class', 'notebook-paper');
+//         notebook.appendChild(notebookPaperEl);
+
+//         const animalFacts = document.createElement('ul');
+//         animalFacts.setAttribute('class', 'notebook-paper');
+//         notebookPaperEl.appendChild(animalFacts);
+//         const liEl = document.createElement('li');
+//         liEl.setAttribute('class', 'notebook-paper');
+
+//         const polaroidContainerEl = document.createElement('div');
+//         polaroidContainerEl.setAttribute('class', 'polaroid-container')
+
+//         // End Result
+//         // <div className="notebook-paper-left">
+//         //     <div className="polaroid-container-right">
+//         //
+//         //     </div>
+//         // </div>
+
+//         const imgEl = document.createElement('img');
+//         imgEl.setAttribute('class', 'polaroid')
+//             // imgEl.setAttribute('img', `assets/ScorePage/${id}.jpg`)
+
+//         notebookPaperEl.appendChild(polaroidContainerEl)
+
+//         polaroidContainerEl.appendChild(imgEl)
+//     })
+// })
