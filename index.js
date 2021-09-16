@@ -61,7 +61,7 @@ function animalFound() {
     score = score += 1;
     document.querySelector('#score').innerHTML = 'Animals Found: ' + score;
     cameraFlash.style.display = 'block';
-    // cameraCircle.style.border = '4px solid black';
+    cameraCircle.setAttribute('class', 'circle');
     setTimeout(function() {
         cameraFlash.style.display = 'none';
     }, 100);
