@@ -11,58 +11,80 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         // console.log({ animal });
 
         const notebookPaper = document.createElement('div');
-        notebookPaper.setAttribute('class', 'notebook-paper-right');
+        notebookPaper.setAttribute('class', 'notebook-paper');
         notebook.appendChild(notebookPaper);
 
         const polaroidContainer = document.createElement('div');
         polaroidContainer.setAttribute('class', 'polaroid-container');
         notebookPaper.appendChild(polaroidContainer);
-
         const imageEl = document.createElement('img');
+        imageEl.src = `assets/ScorePage/${animal.id}.jpg`;
+
+        const animalFacts = document.createElement('ul');
+        animalFacts.setAttribute('class', 'animal-facts');
+
+        const animalLists = [{
+                key: 'conservationStatus',
+                listName: 'conservation status',
+            },
+            {
+                key: 'ecologicalRoles',
+                listName: 'ecological roles',
+            },
+            {
+                key: 'threats',
+                listName: 'threats',
+            },
+            {
+                key: 'waysYouCanHelp',
+                listName: 'ways you can help',
+            },
+        ];
+
+        animalLists.forEach((item) => {
+            const liEl = document.createElement('li');
+            const boldEl = document.createElement('b');
+            const animalTextEl = document.createElement('span');
+
+            const allCapText = item.listName.toUpperCase();
+            const boldText = allCapText + ': ';
+
+            const animalText = animal[item.key];
+
+            boldEl.innerText = boldText;
+            animalTextEl.innerText = animalText;
+
+            liEl.appendChild(boldEl);
+            liEl.appendChild(animalTextEl);
+
+            animalFacts.appendChild(liEl);
+        });
+
+        notebookPaper.appendChild(animalFacts);
+
         imageEl.setAttribute('class', 'polaroid');
         polaroidContainer.appendChild(imageEl);
         imageEl.src = `assets/ScorePage/${animal.id}.jpg`;
 
-        const imageName = document.createElement('h1');
+        const imageName = document.createElement('div');
         imageName.setAttribute('class', 'polaroid-name');
-        polaroidContainer.appendChild(imageName);
-        imageName.appendChild(document.createTextNode(animal.name));
+        imageName.innerText = animal.name;
 
-        const checkBox = document.createElement('div');
-        checkBox.setAttribute('class', 'check-container');
-        notebookPaper.appendChild(checkBox);
+        const nameCheckbox = document.createElement('div');
+        nameCheckbox.setAttribute('class', 'name-checkbox');
 
         const greenCheckMark = document.createElement('img');
         greenCheckMark.setAttribute('class', 'green-check-mark');
-        checkBox.appendChild(greenCheckMark);
+        greenCheckMark.setAttribute('data-animal-id', animal.id);
         greenCheckMark.src = 'assets/ScorePage/green-check-mark.png';
 
-        const animalFacts = document.createElement('ul');
-        const animalFactHeaders = ['CONSERVATION STATUS: ', 'ECOLOGICAL ROLES: ', 'THREATS ', 'WAYS YOU CAN HELP: '];
+        nameCheckbox.appendChild(imageName);
+        nameCheckbox.appendChild(greenCheckMark);
 
-        const conservationStatus = document.createElement('li');
-        const ecologicalRoles = document.createElement('li');
-        const threats = document.createElement('li');
-        const waysYouCanHelp = document.createElement('li');
+        polaroidContainer.appendChild(nameCheckbox);
+    });
+});
 
-        notebookPaper.appendChild(animalFacts);
-        animalFacts.appendChild(conservationStatus);
-        animalFacts.appendChild(ecologicalRoles);
-        animalFacts.appendChild(threats);
-        animalFacts.appendChild(waysYouCanHelp);
-        conservationStatus.appendChild(document.createTextNode(animalFactHeaders[0] + animal.conservationStatus));
-        ecologicalRoles.appendChild(document.createTextNode(animalFactHeaders[1] + animal.ecologicalRoles));
-        threats.appendChild(document.createTextNode(animalFactHeaders[2] + animal.threats));
-        waysYouCanHelp.appendChild(document.createTextNode(animalFactHeaders[3] + animal.waysYouCanHelp));
-    })
-
-})
-
-function checkOff() {
-    greenCheckMark.style.display = 'block';
-}
-
-console.log(greenCheckMark);
 
 {
     /* <div id="notebook">
@@ -81,8 +103,6 @@ console.log(greenCheckMark);
     </div>
     </div> */
 }
-
-
 
 //         // This is the created element
 //         // <div></div>
