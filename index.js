@@ -11,7 +11,6 @@ const finalScore = document.querySelector('#finalscore');
 
 function startGame() {
     document.querySelector('#landingPage').style.width = '0%';
-    cameraCircle.setAttribute('class', 'circle');
 }
 
 function onTimesUp() {
