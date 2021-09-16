@@ -1,19 +1,25 @@
 $.getJSON('./assets/data/animals.json', (animals) => {
-    console.log(animals);
-    animals.forEach((animal) => {
-        console.log({ animal });
+    console.log(animals[0]);
 
+    animals.forEach((animal) => {
         AFRAME.registerComponent(animal.id, {
             init: function() {
                 this.el.addEventListener('click', (e) => {
-                    const animaleEl = document.querySelector(`#${animal.id}`);
+                    const animalEl = document.querySelector(`#${animal.id}`);
+
+                    const animalId = e.target.id;
+
+                    const dataAnimalId = `[data-animal-id=${animalId}]`
+                    const animalCheck = document.querySelector(dataAnimalId)
+
+                    animalCheck.style.display = 'block'
 
                     cameraIndicator();
 
                     setTimeout(function() {
-                        animaleEl.remove();
+                        animalEl.remove();
                         animalFound();
-                        checkOff();
+
                     }, 1500);
                 });
             },
