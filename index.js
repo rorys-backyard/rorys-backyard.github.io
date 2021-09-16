@@ -9,8 +9,9 @@ const animatedMarker = document.querySelector('#animated-marker');
 let cameraCircle = document.querySelector('#circle');
 const finalScore = document.querySelector('#finalscore');
 
-function closeNav() {
+function startGame() {
     document.querySelector('#landingPage').style.width = '0%';
+    cameraCircle.setAttribute('class', 'circle');
 }
 
 function onTimesUp() {
