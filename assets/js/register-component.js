@@ -6,7 +6,6 @@ $.getJSON('./assets/data/animals.json', (animals) => {
             init: function() {
                 this.el.addEventListener('click', (e) => {
                     const animalEl = document.querySelector(`#${animal.id}`);
-                    console.log(animal.id);
 
                     const animalId = e.target.id;
 
