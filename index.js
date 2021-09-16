@@ -6,7 +6,7 @@ let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 const cameraFlash = document.getElementById('cameraflash');
 const animatedMarker = document.querySelector('#animated-marker');
-const cameraCircle = document.querySelector('#circle');
+let cameraCircle = document.querySelector('#circle');
 const finalScore = document.querySelector('#finalscore');
 
 function closeNav() {
@@ -61,16 +61,16 @@ function animalFound() {
     score = score += 1;
     document.querySelector('#score').innerHTML = 'Animals Found: ' + score;
     cameraFlash.style.display = 'block';
-    cameraCircle.style.border = '4px solid black';
+    // cameraCircle.style.border = '4px solid black';
     setTimeout(function() {
         cameraFlash.style.display = 'none';
     }, 100);
 }
 
 function animalEnter() {
-    cameraCircle.style.border = '4px solid lightgreen';
-};
+    cameraCircle.setAttribute('class', 'blink-circle');
+}
 
 function animalLeave() {
-    cameraCircle.style.border = '4px solid black';
+    cameraCircle.setAttribute('class', 'circle');
 }
