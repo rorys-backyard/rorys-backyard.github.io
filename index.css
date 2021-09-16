@@ -339,7 +339,7 @@ body {
 .green-check-mark {
     height: inherit;
     width: auto;
-    display: none;
+    display: block;
 }
 
 .polaroid-container {

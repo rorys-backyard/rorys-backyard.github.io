@@ -55,7 +55,14 @@ $.getJSON('./assets/data/animals.json', (animals) => {
         threats.appendChild(document.createTextNode(animalFactHeaders[2] + animal.threats));
         waysYouCanHelp.appendChild(document.createTextNode(animalFactHeaders[3] + animal.waysYouCanHelp));
     })
+
 })
+
+function checkOff() {
+    greenCheckMark.style.display = 'block';
+}
+
+console.log(greenCheckMark);
 
 {
     /* <div id="notebook">

@@ -8,7 +8,6 @@ const cameraFlash = document.getElementById('cameraflash');
 const animatedMarker = document.querySelector('#animated-marker');
 const cameraCircle = document.querySelector('#circle');
 const finalScore = document.querySelector('#finalscore');
-const greenCheckMark = document.querySelector('#green-check-mark');
 
 function closeNav() {
     document.querySelector('#landingPage').style.width = '0%';
@@ -71,7 +70,3 @@ function animalFound() {
 function cameraIndicator() {
     cameraCircle.style.border = '4px solid lightgreen';
 };
-
-function checkOff() {
-    greenCheckMark.style.display = 'block';
-}

@@ -25,6 +25,19 @@
         }
     },
     {
+        "name": "Green Treefrog",
+        "id": "green-treefrog",
+        "conservationStatus": "Least Concern",
+        "ecologicalRoles": " As indicator species, green treefrogs can alert humans to negative environmental conditions.",
+        "threats": "Competition with the nonnative Cuban Treefrog.",
+        "waysYouCanHelp": "Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day.",
+        "aImageAttributes": {
+            "rotation": "270 0 0",
+            "scale": "0.25 0.25 0",
+            "position": "-0.5 0 -0.5"
+        }
+    },
+    {
         "name": "North American Bobcat",
         "id": "north-american-bobcat",
         "conservationStatus": "Least Concern",
@@ -100,19 +113,6 @@
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
             "position": "-1 0 0"
-        }
-    },
-    {
-        "name": "Green Treefrog",
-        "id": "green-treefrog",
-        "conservationStatus": "Least Concern",
-        "ecologicalRoles": " As indicator species, green treefrogs can alert humans to negative environmental conditions.",
-        "threats": "Competition with the nonnative Cuban Treefrog.",
-        "waysYouCanHelp": "Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day.",
-        "aImageAttributes": {
-            "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "-0.5 0 -0.5"
         }
     }
 ]
