@@ -1,4 +1,4 @@
-const TIME_LIMIT = 20;
+const TIME_LIMIT = 60;
 const maximumAnimals = 9;
 let score = 0;
 let timePassed = 0;
@@ -67,6 +67,10 @@ function animalFound() {
     }, 100);
 }
 
-function cameraIndicator() {
+function animalEnter() {
     cameraCircle.style.border = '4px solid lightgreen';
 };
+
+function animalLeave() {
+    cameraCircle.style.border = '4px solid black';
+}

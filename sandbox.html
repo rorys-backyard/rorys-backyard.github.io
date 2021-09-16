@@ -1,85 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='sandbox.css'>
 </head>
 
 <body>
-    <div id="landingPage" class="landing-page">
-        <img class="company-logo" src="assets/LandingPage/LCS.png">
-        <h1 class="exhibit">
-            RORY'S BACKYARD
-        </h1>
-        <h2 class='game-title'>
-            HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
-        </h2>
-        <img src='assets/cloud.png' class='cloud'>
-        <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
-        <p class='game-info'>
-            Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
-        </p>
-        <p class='directions'>
-            <u>TO PLAY</u><br>1. LOCATE AN ANIMAL ON SCREEN<br>2. CENTER THE ANIMAL IN THE RETICAL<br>3. WAIT UNTIL YOU SEE A FLASH!<br><br>
-            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='closeNav(), startTimer()'>START!</button>
-        </p>
-        <img src="assets/LandingPage/bottomborder.png" class='grass'>
+    <div class="loader">
+        <svg class="circular-loader">
+            <circle class="loader-path" cx="50" cy="50" r="20"></circle>
+        </svg>
     </div>
-    <div class="timer">
-        <span id="timer" class="timer">1:00</span>
-    </div>
-
-    <div class="score">
-        <div class="score">
-            <span id="score" class="score">Animals Found: 0</span>
-        </div>
-    </div>
-
-    <object id="cameralens" class="cameralens">
-    <div class="circle" id="circle"></div>
-  </object>
-
-    <object id="cameraflash" class="cameraflash"></object>
-
-    <div id="endgame" class="endgame">
-        <a href="javascript:void(0)"></a>
-        <img class="company-logo" src="assets/LandingPage/LCS.png">
-        <h1 class="exhibit">
-            RORY'S BACKYARD
-        </h1>
-        <p class="endgame-content">
-            <a>YOU FOUND</a>
-            <span id="finalscore">0</span>
-            <a>IN RORY'S BACKYARD!</a>
-        </p>
-        <h2 class='game-info'>
-            CHECK OUT RORY'S ALBUM BELOW TO SEE HIS NOTES ABOUT EACH SPECIES
-        </h2>
-        <div id="notebook"></div>
-        <div class='survey-link'>We value your feedback!
-            <a href="https://www.google.com/">Click Here</a> to tell us about your experience.</div>
-    </div>
-
-    <script src="index.js"></script>
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' device-orientation-permission-ui="enabled: false">
-        <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'> -->
-        <a-marker markerhandler preset='hiro' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'>
-            <!-- Setup Scene Container -->
-        </a-marker>
-        <a-entity camera>
-            <!-- This is how the click trigger happens -->
-            <a-entity cursor='fuse: true; fuseTimeout: 1' position='0 0 -1'>
-            </a-entity>
-        </a-entity>
-    </a-scene>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./assets/js/register-component.js"></script>
-<script src="./assets/js/setup-scene-container.js"></script>
-<script src="./assets/js/notebook.js"></script>
 
 </html>

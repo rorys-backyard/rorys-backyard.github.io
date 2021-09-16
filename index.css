@@ -98,6 +98,7 @@ body {
     margin-right: 25px;
     text-shadow: 0px 0px 5px black;
     color: white;
+    padding: 10px;
 }
 
 .directions {
@@ -196,8 +197,22 @@ body {
     margin-left: -53px;
     width: 100px;
     height: 100px;
-    border-radius: 40px;
+    border-radius: 100%;
     border: 4px solid black;
+}
+
+#circle__svg {
+    transform: scaleX(1);
+}
+
+#circle__fill {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(360deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
 }
 
 .cameraflash {
@@ -258,20 +273,6 @@ body {
     gap: 30px;
 }
 
-.notebook {
-    background-color: white;
-    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 22px, teal 23px);
-    box-shadow: 0px 0px 5px black;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    float: left;
-    padding-top: 10px;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 16px;
-}
-
 .name-checkbox {
     height: 20px;
     padding: 4px;
@@ -280,17 +281,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4px;
-}
-
-.check-container {
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    box-shadow: inset 0px 0px 4px black;
 }
 
 .animal-facts {
@@ -326,10 +316,6 @@ body {
     padding-left: 8%;
     padding-top: 8%;
     height: auto;
-}
-
-.animal-fact-headers {
-    font-weight: 900;
 }
 
 .survey-link {
