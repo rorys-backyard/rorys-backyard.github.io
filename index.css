@@ -131,10 +131,10 @@ body {
 .info-directions-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     padding-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
-    justify-content: flex-end;
     gap: 30px;
 }
 
@@ -147,6 +147,7 @@ body {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 450px;
 }
 
 .directions {
@@ -156,6 +157,7 @@ body {
     color: white;
     text-shadow: 0px 0px 5px black;
     max-width: 60%;
+    padding-right: 10px;
 }
 
 .start-button-container {
@@ -169,7 +171,7 @@ body {
 .start-button {
     position: relative;
     text-align: center;
-    font-size: 26px;
+    font-size: 32px;
     font-family: Gagalin;
     color: white;
     background-color: #f44336;
