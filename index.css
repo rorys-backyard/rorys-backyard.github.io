@@ -145,11 +145,12 @@ body {
     position: absolute;
     font-family: Gagalin;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     color: white;
     text-shadow: 0px 0px 5px black;
-    padding-left: 50%;
-    height: 40%;
+    padding-left: 40%;
+    padding-right: 5px;
+    bottom: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
