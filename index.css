@@ -128,32 +128,34 @@ body {
     border-radius: 100px;
 }
 
+.info-directions-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
 .game-info {
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     text-align: center;
     text-shadow: 0px 0px 5px black;
     color: white;
-    padding-top: 10px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .directions {
-    position: absolute;
     font-family: Gagalin;
     font-size: 18px;
     text-align: center;
     color: white;
     text-shadow: 0px 0px 5px black;
-    padding-left: 40%;
-    padding-right: 5px;
-    bottom: 100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    max-width: 60%;
 }
 
 .start-button-container {
