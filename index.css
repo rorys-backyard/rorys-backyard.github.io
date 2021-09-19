@@ -30,63 +30,102 @@ body {
     overflow-x: hidden;
 }
 
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
 .exhibit {
-    position: relative;
-    display: block;
-    margin-top: 28px;
-    margin-bottom: auto;
-    margin-left: 105px;
-    margin-right: auto;
     max-width: auto;
-    height: 10%;
     font-family: Gagalin;
     font-size: 34px;
     text-shadow: 0px 0px 15px white;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .company-logo {
-    position: relative;
-    float: left;
-    margin-top: 10px;
-    margin-bottom: auto;
-    margin-left: 10px;
-    margin-right: auto;
     max-width: 80px;
     max-height: auto;
     overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .game-title {
     font-family: Gagalin;
     text-align: center;
     font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: auto;
     font-style: italic;
     font-weight: 900;
     text-shadow: 0px 2px 10px white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cloud-mag-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .magnifying-glass {
-    float: right;
-    position: relative;
-    max-height: auto;
-    max-width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: 0px'
-
+    height: auto;
+    width: 100px;
+    /* margin-right: 0px; */
 }
 
-.cloud {
-    font-weight: 500;
-    text-align: center;
+.cloud-container {
+    max-width: 200px;
+    max-height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+#cloud {
+    width: 175px;
     height: auto;
-    width: 225px;
-    margin-top: 25px;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: 40px;
+    background: #f2f9fe;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    font-family: Gagalin;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cloud:after,
+#cloud:before {
+    content: '';
+    position: absolute;
+    background: #f2f9fe;
+    z-index: -1
+}
+
+#cloud:after {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 25px;
+    border-radius: 50px;
+}
+
+#cloud:before {
+    width: 90px;
+    height: 90px;
+    top: -45px;
+    right: 25px;
+    border-radius: 100px;
 }
 
 .game-info {
@@ -94,27 +133,40 @@ body {
     font-size: 14px;
     font-style: italic;
     text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
     text-shadow: 0px 0px 5px black;
     color: white;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10px;
 }
 
 .directions {
-    margin-right: 10px;
-    margin-left: 45%;
+    position: absolute;
     font-family: Gagalin;
     font-size: 18px;
     text-align: left;
     color: white;
     text-shadow: 0px 0px 5px black;
+    padding-left: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-button-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    width: 100%;
 }
 
 .start-button {
     position: relative;
     text-align: center;
-    font-size: 45px;
+    font-size: 26px;
     font-family: Gagalin;
     color: white;
     background-color: #f44336;
@@ -308,7 +360,8 @@ body {
     background-color: #6b5c47;
     margin-left: 15px;
     margin-right: 15px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -377,6 +430,24 @@ body {
     padding-left: 8%;
     padding-top: 8%;
     height: auto;
+}
+
+.try-again-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.try-again-container-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .survey-link {

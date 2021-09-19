@@ -1,4 +1,4 @@
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 2;
 const maximumAnimals = 9;
 let score = 0;
 let timePassed = 0;
@@ -47,6 +47,20 @@ function formatTime(time) {
 function openNav() {
     document.getElementById('endgame').style.width = '100%';
     if (score < maximumAnimals) {
+        const tryAgainContainer = document.querySelector('#try-again-container');
+        const tryAgainText = document.createElement('div');
+        const tryAgainButton = document.createElement('button');
+        tryAgainButton.setAttribute('class', 'start-button');
+        tryAgainText.setAttribute('class', 'try-again-container-text');
+        tryAgainText.innerText = "Didn't find all the animals?"
+        tryAgainButton.innerText = 'TRY AGAIN!';
+        tryAgainContainer.appendChild(tryAgainText);
+        tryAgainContainer.appendChild(tryAgainButton);
+        tryAgainButton.addEventListener('click', function() {
+            location.reload();
+        });
+
+
         if (score === 1) {
             finalScore.innerHTML = score + ' ANIMAL';
         } else {

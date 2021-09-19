@@ -12,22 +12,31 @@
 
 <body>
     <div id="landingPage" class="landing-page">
-        <img class="company-logo" src="assets/LandingPage/LCS.png">
-        <h1 class="exhibit">
-            RORY'S BACKYARD
-        </h1>
-        <h2 class='game-title'>
-            HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
-        </h2>
-        <img src='assets/cloud.png' class='cloud'>
-        <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
-        <p class='game-info'>
+        <div id='title-container' class='title-container'>
+            <img class="company-logo" src="assets/LandingPage/LCS.png">
+            <h1 class="exhibit">
+                RORY'S BACKYARD
+            </h1>
+            <h2 class='game-title'>
+                HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
+            </h2>
+        </div>
+        <div id='cloud-mag-container' class='cloud-mag-container'>
+            <!-- <img src='assets/cloud.png' class='cloud'> -->
+            <div id='cloud-container' class='cloud-container'>
+                <div id="cloud">CAN YOU FIND ALL 9 HIDDEN ANIMALS?</div>
+            </div>
+            <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
+        </div>
+        <div class='game-info'>
             Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
-        </p>
+        </div>
         <p class='directions'>
             <u>TO PLAY</u><br>1. LOCATE AN ANIMAL ON SCREEN<br>2. CENTER THE ANIMAL IN THE RETICLE<br>3. WAIT UNTIL YOU SEE A FLASH!<br><br>
-            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='startGame(), startTimer()'>START!</button>
         </p>
+        <div class='start-button-container' id='start-button-container'>
+            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='startGame(), startTimer()'>START!</button>
+        </div>
         <img src="assets/LandingPage/bottomborder.png" class='grass'>
     </div>
     <div class="timer">
@@ -46,10 +55,12 @@
 
     <div id="endgame" class="endgame">
         <a href="javascript:void(0)"></a>
-        <img class="company-logo" src="assets/LandingPage/LCS.png">
-        <h1 class="exhibit">
-            RORY'S BACKYARD
-        </h1>
+        <div class='title-container'>
+            <img class="company-logo" src="assets/LandingPage/LCS.png">
+            <h1 class="exhibit">
+                RORY'S BACKYARD
+            </h1>
+        </div>
         <p class="endgame-content">
             <a>YOU FOUND</a>
             <span id="finalscore">0</span>
@@ -60,7 +71,8 @@
         </h2>
         <div id="notebook">
         </div>
-
+        <div class='try-again-container' id='try-again-container'>
+        </div>
         <div class='survey-link'>We value your feedback!
             <a href="https://www.google.com/">Click Here</a> to tell us about your experience.</div>
     </div>
