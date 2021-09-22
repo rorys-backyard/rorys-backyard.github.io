@@ -69,7 +69,7 @@ body {
     padding-right: 5px;
 }
 
-.cloud-mag-container {
+.cloud-info-mag-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -79,7 +79,7 @@ body {
 .magnifying-glass {
     height: auto;
     width: 100px;
-    /* margin-right: 0px; */
+    margin-right: 0px;
 }
 
 .cloud-container {
@@ -357,6 +357,16 @@ body {
     transition: 0.5s;
 }
 
+.score-page-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    padding: 10px;
+}
+
 .endgame-content {
     position: relative;
     font-family: Gagalin;
@@ -447,7 +457,7 @@ body {
 
 .try-again-container-text {
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     text-align: center;
     text-shadow: 0px 0px 5px black;
@@ -460,4 +470,24 @@ body {
     position: static;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 694px) {
+    .magnifying-glass {
+        order: 2;
+    }
+    .game-info {
+        order: 3;
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .start-button-container {
+        justify-content: left;
+        padding-left: 20px;
+    }
 }
