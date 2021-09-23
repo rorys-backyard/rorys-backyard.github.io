@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 aImage.setAttribute('src', `./assets/images/${id}.png`);
                 aImage.setAttribute('alt', name);
 
-                // Research: Loops for Objects
                 for (const attribute in aImageAttributes) {
                     const value = aImageAttributes[attribute];
 
