@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="index.css">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/3.0.0/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.3.3/aframe/build/aframe-ar.js"></script>
 </head>
 
 <body>
@@ -83,8 +83,10 @@
         <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" value='6'> -->
         <a-marker markerhandler preset='hiro' emitevents="true" id="animated-marker" value='6'>
             <!-- Setup Scene Container -->
+            <!-- <a-box> here for debugging issues with the scene planing to the marker -->
+            <!-- <a-box position='0 0 0' color='red' scale='0.5 0.1 0.5'></a-box> -->
         </a-marker>
-        <a-entity camera>
+        <a-entity camera look-controls='enabled: false; magicWindowTrackingEnabled: false'>
             <!-- This is how the click trigger happens -->
             <a-entity cursor='fuse: true; fuseTimeout: 1500' position='0 0 -1'>
             </a-entity>

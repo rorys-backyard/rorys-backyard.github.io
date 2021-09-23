@@ -7,8 +7,8 @@
         "waysYouCanHelp": "Research any animal you are interested in owning as a pet before you buy it.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0.25",
-            "position": "1 0 1"
+            "scale": "0.25 0.25 0",
+            "position": "0.5 0 1"
         }
     },
     {
@@ -20,8 +20,8 @@
         "waysYouCanHelp": "Use natural pest controls and take down any outdoor nets not in use.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "0.5 0 0.5"
+            "scale": "0.5 0.5 0",
+            "position": "0.5 0 -0.93"
         }
     },
     {
@@ -33,8 +33,8 @@
         "waysYouCanHelp": "Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "-0.5 0 -0.5"
+            "scale": "0.2 0.2 0",
+            "position": "-0.3 0 0"
         }
     },
     {
@@ -46,8 +46,8 @@
         "waysYouCanHelp": "Spread the word that bobcats generally stay away from people and that their habitat needs saving.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "1 0 0"
+            "scale": "1 1 0",
+            "position": "1.5 0 1"
         }
     },
     {
@@ -60,7 +60,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "0.5 0 -0.5"
+            "position": "-0.5 0 -0.79"
         }
     },
     {
@@ -72,8 +72,8 @@
         "waysYouCanHelp": "Make sure outdoor garbage lids are secure, remove any fallen fruit from trees or bird seed from feeders at night, and never feed any wild animal.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "1 0 -1"
+            "scale": "0.5 0.5 0",
+            "position": "0.5 0 0.5"
         }
     },
     {
@@ -86,7 +86,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-1 0 1"
+            "position": "-0.5 0 1"
         }
     },
     {
@@ -99,7 +99,7 @@
         "aImageAttributes": {
             "rotation": "270 0 0",
             "scale": "0.25 0.25 0",
-            "position": "-0.5 0 0.5"
+            "position": "-0.5 0 0.6"
         }
     },
     {
@@ -111,8 +111,8 @@
         "waysYouCanHelp": "Look for alternative landscaping options for your yard like plants that aren’t as tasty to deer.",
         "aImageAttributes": {
             "rotation": "270 0 0",
-            "scale": "0.25 0.25 0",
-            "position": "-1 0 0"
+            "scale": "1 1 0",
+            "position": "-1.5 0 0.5"
         }
     }
 ]
