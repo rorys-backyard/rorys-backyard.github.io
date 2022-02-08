@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="index.css">
@@ -79,7 +80,7 @@
     </div>
 
     <script src="index.js"></script>
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' device-orientation-permission-ui="enabled: false">
+    <a-scene arjs='sourceType: webcam; debugUIEnabled: false;' device-orientation-permission-ui="enabled: false">
         <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" id="animated-marker" value='6'> -->
         <a-marker markerhandler preset='hiro' emitevents="true" id="animated-marker" value='6'>
             <!-- Setup Scene Container -->
