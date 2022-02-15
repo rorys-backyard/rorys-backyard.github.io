@@ -77,8 +77,8 @@ body {
 }
 
 .magnifying-glass {
-    height: auto;
     width: 100px;
+    height: 100%;
     margin-right: 0px;
 }
 
@@ -473,6 +473,37 @@ body {
     font-weight: bolder;
 }
 
+@media screen and (min-width: 760px) and (orientation: portrait) {
+    .magnifying-glass {
+        order: 2;
+    }
+    .game-info {
+        order: 3;
+        font-size: 31px;
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 35px;
+    }
+    .cloud-info-mag-container {
+        padding-bottom: 40px;
+    }
+    .directions {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+    .game-info {
+        font-size: 31px;
+        max-width: 600px;
+    }
+    .directions {
+        font-size: 32px;
+        padding-top: 25px;
+    }
+}
+
 @media screen and (max-width: 694px) {
     .magnifying-glass {
         order: 2;
@@ -486,7 +517,7 @@ body {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: landscape) and (max-width: 999px) {
     .start-button-container {
         justify-content: left;
         padding-left: 20px;
