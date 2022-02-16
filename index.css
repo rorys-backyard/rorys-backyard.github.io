@@ -473,7 +473,7 @@ body {
     font-weight: bolder;
 }
 
-@media screen and (min-width: 760px) and (orientation: portrait) {
+@media screen and (min-width: 750px) and (orientation: portrait) {
     .magnifying-glass {
         order: 2;
     }
@@ -491,6 +491,15 @@ body {
     .directions {
         font-size: 36px;
     }
+    .endgame-content {
+        font-size: 36px;
+    }
+    .score-page-text {
+        font-size: 24px;
+    }
+    .animal-facts {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 1000px) and (orientation: landscape) {
@@ -501,6 +510,50 @@ body {
     .directions {
         font-size: 32px;
         padding-top: 25px;
+    }
+    .magnifying-glass {
+        width: 195px;
+    }
+    .cloud-container {
+        padding-top: 55px;
+    }
+    .info-directions-container {
+        padding-right: 45px;
+        padding-top: 50px;
+    }
+    .endgame-content {
+        font-size: 36px;
+    }
+    .score-page-text {
+        font-size: 24px;
+    }
+    .animal-facts {
+        font-size: 35px;
+        padding-left: 14px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape) {
+    .game-info {
+        font-size: 31px;
+        max-width: 800px;
+    }
+    .directions {
+        font-size: 32px;
+        padding-top: 25px;
+    }
+    .info-directions-container {
+        padding-right: 150px;
+        padding-top: 50px;
+    }
+    .game-title {
+        font-size: 40px;
+    }
+    .exhibit {
+        font-size: 44px;
+    }
+    .company-logo {
+        max-width: 120px;
     }
 }
 
