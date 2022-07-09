@@ -1,0 +1,13 @@
+[
+  {
+    "exhibit": "Rory's Backyard",
+    "gameTitle": "Hidden in Plain Sight: Augmented Reality Game",
+    "cloud": "Can you find all 9 hidden animals?",
+    "gameInfo": "Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!",
+    "directions": "To play: Point your camera at the exhibit. Center an animal on your screen. Keep it centered until you see a flash!",
+    "startButton": "Start!",
+    "score": "Animals Found: 0",
+    "endgameContent": "",
+    "scorePageText": "Check out Rory's album below to see hsi notes about each species"
+  }
+]
