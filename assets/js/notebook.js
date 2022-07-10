@@ -1,4 +1,15 @@
-fetch("./assets/data/animals.json")
+let userLang = navigator.language;
+let esValidation = /es/.test(userLang);
+let langFile;
+switch (esValidation) {
+  case true:
+    langFile = "animales";
+    break;
+  default:
+    langFile = "animals";
+}
+
+fetch(`./assets/data/${langFile}.json`)
   .then((response) => response.json())
   .then((animals) => {
     const notebook = document.querySelector("#notebook");

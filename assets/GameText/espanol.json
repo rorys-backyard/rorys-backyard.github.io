@@ -1,0 +1,46 @@
+[
+  {
+    "class": "exhibit",
+    "text": "El Patio de Rory"
+  },
+  {
+    "class": "exhibit-notebook",
+    "text": "El Patio de Rory"
+  },
+  {
+    "class": "game-title",
+    "text": "Oculto a Plena Vista: Juego de Realidad Aumentada"
+  },
+  {
+    "class": "cloud",
+    "text": "¿Puedes encontrar los 9 animales escondidos?"
+  },
+  {
+    "class": "game-info",
+    "text": "La Florida es el hogar para muchas especies nativas en la vida silvestre que usan su abilidad para camuflarse a manera de mantenerse a salvo de los depredadores. ¡Mira si puedes encontrar los 9 animales escondidos en menos de un minuto!"
+  },
+  {
+    "class": "directions",
+    "text": "Para jugar: Apunta tu cámara a la exhibición. Centra un animal en la pantalla. ¡Manténlo centrado hasta que veas un destello!"
+  },
+  {
+    "class": "start-button",
+    "text": "¡Empieza!"
+  },
+  {
+    "class": "score",
+    "text": "animales encontrados: 0"
+  },
+  {
+    "class": "endgame-content-1",
+    "text": "¡Encontraste el "
+  },
+  {
+    "class": "endgame-content-2",
+    "text": " de Animales en el Jardín de Rory!"
+  },
+  {
+    "class": "score-page-text",
+    "text": "Echa un vistazo al album de Rory, a continuacion estan sus notas sobre cada especie"
+  }
+]

@@ -1,207 +1,207 @@
 body {
-    font-family: Montserrat, sans-serif;
-    margin: 0px;
-    overflow: hidden;
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  overflow: hidden;
 }
 
 @font-face {
-    font-family: Gagalin;
-    src: url(fonts/Gagalin-Regular.otf);
+  font-family: Gagalin;
+  src: url(fonts/Gagalin-Regular.otf);
 }
 
 @font-face {
-    font-family: 'Architects Daughter';
-    src: url(fonts/ArchitectsDaughter-Regular.ttf);
+  font-family: "Architects Daughter";
+  src: url(fonts/ArchitectsDaughter-Regular.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .landing-page {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to top, #38b6ff, rgba(0, 0, 255, 0.5));
-    background-color: #38b6ff;
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s;
-    overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #38b6ff, rgba(0, 0, 255, 0.5));
+  background-color: #38b6ff;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  overflow-x: hidden;
 }
 
 .title-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  justify-content: center;
 }
 
 .exhibit {
-    max-width: auto;
-    font-family: Gagalin;
-    font-size: 34px;
-    text-shadow: 0px 0px 15px white;
-    padding-left: 5px;
-    padding-right: 5px;
+  max-width: auto;
+  font-family: Gagalin;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .company-logo {
-    max-width: 80px;
-    max-height: auto;
-    overflow: hidden;
-    padding-left: 5px;
-    padding-right: 5px;
+  max-width: 80px;
+  max-height: auto;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .game-title {
-    font-family: Gagalin;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 900;
-    text-shadow: 0px 2px 10px white;
-    padding-left: 5px;
-    padding-right: 5px;
+  font-family: Gagalin;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 900;
+  text-shadow: 0px 2px 10px white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .cloud-info-mag-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .magnifying-glass {
-    width: 100px;
-    height: 100%;
-    margin-right: 0px;
+  width: 100px;
+  height: 100%;
+  margin-right: 0px;
 }
 
 .cloud-container {
-    max-width: 200px;
-    max-height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 25px;
+  max-width: 200px;
+  max-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
 }
 
 #cloud {
-    width: 175px;
-    height: auto;
-    background: #f2f9fe;
-    border-radius: 50px;
-    position: relative;
-    text-align: center;
-    font-family: Gagalin;
-    font-size: 16px;
-    vertical-align: middle;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  width: 175px;
+  height: auto;
+  background: #f2f9fe;
+  border-radius: 50px;
+  position: relative;
+  text-align: center;
+  font-family: Gagalin;
+  font-size: 16px;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #cloud:after,
 #cloud:before {
-    content: '';
-    position: absolute;
-    background: #f2f9fe;
-    z-index: -1
+  content: "";
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1;
 }
 
 #cloud:after {
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 25px;
-    border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 25px;
+  border-radius: 50px;
 }
 
 #cloud:before {
-    width: 90px;
-    height: 90px;
-    top: -45px;
-    right: 25px;
-    border-radius: 100px;
+  width: 90px;
+  height: 90px;
+  top: -45px;
+  right: 25px;
+  border-radius: 100px;
 }
 
 .info-directions-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .game-info {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 0px 0px 5px black;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 380px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 380px;
 }
 
 .directions {
-    font-family: Gagalin;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    max-width: 60%;
-    padding-right: 10px;
+  font-family: Gagalin;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  max-width: 60%;
+  padding-right: 10px;
 }
 
 .start-button-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    bottom: 20px;
-    width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  width: 100%;
 }
 
 .start-button {
-    position: relative;
-    text-align: center;
-    font-size: 38px;
-    font-family: Gagalin;
-    color: white;
-    background-color: #f44336;
-    border: 5px solid #f1f1f1;
-    box-shadow: inset 3px 1px 6px lightgray;
-    padding: 5px 15px;
-    border-radius: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 38px;
+  font-family: Gagalin;
+  color: white;
+  background-color: #f44336;
+  border: 5px solid #f1f1f1;
+  box-shadow: inset 3px 1px 6px lightgray;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 
 .start-button:active {
-    box-shadow: inset 5px 2px 10px #000000;
-    color: darkgrey;
-    background-color: darkred;
-    transition: 0ms;
+  box-shadow: inset 5px 2px 10px #000000;
+  color: darkgrey;
+  background-color: darkred;
+  transition: 0ms;
 }
 
 .grass {
-    z-index: -5;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+  z-index: -5;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .a-enter-vr-button {
-    display: none;
+  display: none;
 }
 
 .timer {
     position: fixed;
     top: 10px;
-    right: 10px;
     background-color: lightblue;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -212,367 +212,373 @@ body {
     border-radius: 10px;
     box-shadow: inset 0px 0px 7px #888888;
     padding: 5px 15px;
-    z-index: 2
+    z-index: 2;
 }
 
 .score {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: tan;
-    color: white;
-    text-shadow: 0px 0px 10px black;
-    font-size: 25px;
-    font-family: Gagalin;
-    font-weight: 500;
-    border: 5px solid white;
-    box-shadow: inset 0px 0px 7px #888888;
-    border-radius: 10px;
-    padding: 5px 15px;
-    z-index: 2;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: tan;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  font-size: 25px;
+  font-family: Gagalin;
+  font-weight: 500;
+  border: 5px solid white;
+  box-shadow: inset 0px 0px 7px #888888;
+  border-radius: 10px;
+  padding: 5px 15px;
+  z-index: 2;
 }
 
 .cameralens {
-    position: absolute;
-    border: 1px solid black;
-    top: 50%;
-    left: 50%;
-    margin-top: -30px;
-    margin-left: -30px;
-    width: 60px;
-    height: 60px;
-    color: black;
-    z-index: 2;
+  position: absolute;
+  border: 1px solid black;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  color: black;
+  z-index: 2;
 }
 
 .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -53px;
-    margin-left: -53px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: 4px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -53px;
+  margin-left: -53px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 4px solid black;
 }
 
 .blink-circle {
-    animation: blinkingBackground 1.5s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -53px;
-    margin-left: -53px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+  animation: blinkingBackground 1.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -53px;
+  margin-left: -53px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 }
 
 @keyframes blinkingBackground {
-    0% {
-        border: 4px solid white;
-    }
-    9% {
-        border: 4px solid black;
-    }
-    10% {
-        border: 4px solid white;
-    }
-    19% {
-        border: 4px solid black;
-    }
-    20% {
-        border: 4px solid white;
-    }
-    29% {
-        border: 4px solid black;
-    }
-    30% {
-        border: 4px solid white;
-    }
-    39% {
-        border: 4px solid black;
-    }
-    40% {
-        border: 4px solid white;
-    }
-    49% {
-        border: 4px solid black;
-    }
-    50% {
-        border: 4px solid white;
-    }
-    59% {
-        border: 4px solid black;
-    }
-    60% {
-        border: 4px solid white;
-    }
-    69% {
-        border: 4px solid black;
-    }
-    70% {
-        border: 4px solid white;
-    }
-    79% {
-        border: 4px solid black;
-    }
-    80% {
-        border: 4px solid white;
-    }
-    89% {
-        border: 4px solid black;
-    }
-    90% {
-        border: 4px solid white;
-    }
-    100% {
-        border: 4px solid black;
-    }
+  0% {
+    border: 4px solid white;
+  }
+  9% {
+    border: 4px solid black;
+  }
+  10% {
+    border: 4px solid white;
+  }
+  19% {
+    border: 4px solid black;
+  }
+  20% {
+    border: 4px solid white;
+  }
+  29% {
+    border: 4px solid black;
+  }
+  30% {
+    border: 4px solid white;
+  }
+  39% {
+    border: 4px solid black;
+  }
+  40% {
+    border: 4px solid white;
+  }
+  49% {
+    border: 4px solid black;
+  }
+  50% {
+    border: 4px solid white;
+  }
+  59% {
+    border: 4px solid black;
+  }
+  60% {
+    border: 4px solid white;
+  }
+  69% {
+    border: 4px solid black;
+  }
+  70% {
+    border: 4px solid white;
+  }
+  79% {
+    border: 4px solid black;
+  }
+  80% {
+    border: 4px solid white;
+  }
+  89% {
+    border: 4px solid black;
+  }
+  90% {
+    border: 4px solid white;
+  }
+  100% {
+    border: 4px solid black;
+  }
 }
 
 .cameraflash {
-    display: none;
-    position: relative;
-    border: 1px solid white;
-    background-color: white;
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
-    color: black;
-    z-index: 1;
+  display: none;
+  position: relative;
+  border: 1px solid white;
+  background-color: white;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  z-index: 1;
 }
 
 .endgame {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: tan;
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: tan;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .score-page-text {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 0px 0px 5px black;
-    color: white;
-    padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+  color: white;
+  padding: 10px;
 }
 
 .endgame-content {
-    position: relative;
-    font-family: Gagalin;
-    z-index: 1;
-    color: white;
-    background-color: #6b5c47;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    border: solid white;
-    text-shadow: 2px 1px 5px black;
-    box-shadow: 0px 0px 5px white;
+  position: relative;
+  font-family: Gagalin;
+  z-index: 1;
+  color: white;
+  background-color: #6b5c47;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid white;
+  text-shadow: 2px 1px 5px black;
+  box-shadow: 0px 0px 5px white;
 }
 
 .notebook-paper {
-    background-color: white;
-    background-image: repeating-linear-gradient(#ffff99 0px, #ffff99 20px, teal 21px);
-    box-shadow: 0px 0px 5px black;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding-top: 7px;
-    padding-left: 5px;
-    padding-bottom: 10px;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 18px;
-    display: flex;
-    gap: 30px;
+  background-color: white;
+  background-image: repeating-linear-gradient(
+    #ffff99 0px,
+    #ffff99 20px,
+    teal 21px
+  );
+  box-shadow: 0px 0px 5px black;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-top: 7px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 18px;
+  display: flex;
+  gap: 30px;
 }
 
 .name-checkbox {
-    height: 20px;
-    padding: 4px;
-    padding-bottom: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  height: 20px;
+  padding: 4px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .animal-facts {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .green-check-mark {
-    max-width: 100%;
-    max-height: 100%;
-    display: none;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
 }
 
 .polaroid-container {
-    height: 180px;
-    width: 150px;
-    background-color: white;
-    border: 1px solid rgb(190, 190, 190);
-    box-shadow: 5px 5px 10px black;
-    flex-shrink: 0;
+  height: 180px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px black;
+  flex-shrink: 0;
 }
 
 .polaroid-name {
-    font-family: 'Architects Daughter', cursive;
-    text-align: center;
-    font-size: 15px;
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 15px;
 }
 
 .polaroid {
-    position: relative;
-    width: 84%;
-    padding-left: 8%;
-    padding-top: 8%;
-    height: auto;
+  position: relative;
+  width: 84%;
+  padding-left: 8%;
+  padding-top: 8%;
+  height: auto;
 }
 
 .try-again-container {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
 }
 
 .try-again-container-text {
-    font-family: Gagalin;
-    font-size: 24px;
-    font-weight: lighter;
-    text-align: center;
-    text-shadow: 0px 0px 10px black;
-    color: white;
-    padding-bottom: 10px;
+  font-family: Gagalin;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  text-shadow: 0px 0px 10px black;
+  color: white;
+  padding-bottom: 10px;
 }
 
 .survey-link {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    font-family: Montserrat, sans-serif;
-    font-style: italic;
-    font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 750px) and (orientation: portrait) {
-    .magnifying-glass {
-        order: 2;
-    }
-    .game-info {
-        order: 3;
-        font-size: 31px;
-        max-width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 35px;
-    }
-    .cloud-info-mag-container {
-        padding-bottom: 40px;
-    }
-    .directions {
-        font-size: 36px;
-    }
-    .endgame-content {
-        font-size: 36px;
-    }
-    .score-page-text {
-        font-size: 24px;
-    }
-    .animal-facts {
-        font-size: 17px;
-    }
+  .magnifying-glass {
+    order: 2;
+  }
+  .game-info {
+    order: 3;
+    font-size: 31px;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 35px;
+  }
+  .cloud-info-mag-container {
+    padding-bottom: 40px;
+  }
+  .directions {
+    font-size: 36px;
+  }
+  .endgame-content {
+    font-size: 36px;
+  }
+  .score-page-text {
+    font-size: 24px;
+  }
+  .animal-facts {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 1000px) and (orientation: landscape) {
-    .game-info {
-        font-size: 31px;
-        max-width: 600px;
-    }
-    .directions {
-        font-size: 32px;
-        padding-top: 25px;
-    }
-    .magnifying-glass {
-        width: 195px;
-    }
-    .cloud-container {
-        padding-top: 55px;
-    }
-    .info-directions-container {
-        padding-right: 45px;
-        padding-top: 50px;
-    }
-    .endgame-content {
-        font-size: 36px;
-    }
-    .score-page-text {
-        font-size: 24px;
-    }
-    .animal-facts {
-        font-size: 35px;
-        padding-left: 14px;
-    }
+  .game-info {
+    font-size: 31px;
+    max-width: 600px;
+  }
+  .directions {
+    font-size: 32px;
+    padding-top: 25px;
+  }
+  .magnifying-glass {
+    width: 195px;
+  }
+  .cloud-container {
+    padding-top: 55px;
+  }
+  .info-directions-container {
+    padding-right: 45px;
+    padding-top: 50px;
+  }
+  .endgame-content {
+    font-size: 36px;
+  }
+  .score-page-text {
+    font-size: 24px;
+  }
+  .animal-facts {
+    font-size: 35px;
+    padding-left: 14px;
+  }
 }
 
 @media screen and (min-width: 1300px) and (orientation: landscape) {
-    .game-info {
-        font-size: 31px;
-        max-width: 800px;
-    }
-    .directions {
-        font-size: 32px;
-        padding-top: 25px;
-    }
-    .info-directions-container {
-        padding-right: 150px;
-        padding-top: 50px;
-    }
-    .game-title {
-        font-size: 40px;
-    }
-    .exhibit {
-        font-size: 44px;
-    }
-    .company-logo {
-        max-width: 120px;
-    }
+  .game-info {
+    font-size: 31px;
+    max-width: 800px;
+  }
+  .directions {
+    font-size: 32px;
+    padding-top: 25px;
+  }
+  .info-directions-container {
+    padding-right: 150px;
+    padding-top: 50px;
+  }
+  .game-title {
+    font-size: 40px;
+  }
+  .exhibit {
+    font-size: 44px;
+  }
+  .company-logo {
+    max-width: 120px;
+  }
 }
 
 @media screen and (max-width: 694px) {
-    .magnifying-glass {
-        order: 2;
-    }
-    .game-info {
-        order: 3;
-        max-width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 15px;
-    }
+  .magnifying-glass {
+    order: 2;
+  }
+  .game-info {
+    order: 3;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+  }
 }
 
 @media screen and (min-width: 800px) and (orientation: landscape) and (max-width: 999px) {
-    .start-button-container {
-        justify-content: left;
-        padding-left: 20px;
-    }
+  .start-button-container {
+    justify-content: left;
+    padding-left: 20px;
+  }
 }

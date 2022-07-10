@@ -16,37 +16,43 @@
         <div id='title-container' class='title-container'>
             <img class="company-logo" src="assets/LandingPage/LCS.png">
             <h1 class="exhibit">
-                RORY'S BACKYARD
+                <!-- RORY'S BACKYARD -->
             </h1>
             <h2 class='game-title'>
-                HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME
+                <!-- HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME -->
             </h2>
         </div>
         <div id='cloud-info-mag-container' class='cloud-info-mag-container'>
             <div id='cloud-container' class='cloud-container'>
-                <div id="cloud">CAN YOU FIND ALL 9 HIDDEN ANIMALS?</div>
+                <div id="cloud" class="cloud">
+                    <!-- CAN YOU FIND ALL 9 HIDDEN ANIMALS? -->
+                </div>
             </div>
             <div id='game-info' class='game-info'>
-                Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
+                <!-- Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute! -->
             </div>
             <img src='assets/LandingPage/magnifyingGlass.png' class='magnifying-glass'>
         </div>
         <div class='info-directions-container'>
             <p class='directions'>
-                <u>TO PLAY</u><br>POINT YOUR CAMERA AT THE EXHIBIT<br>CENTER AN ANIMAL ON YOUR SCREEN<br>KEEP IT CENTERED UNTIL YOU SEE A FLASH!<br><br>
+                <!-- <u>TO PLAY</u><br>POINT YOUR CAMERA AT THE EXHIBIT<br>CENTER AN ANIMAL ON YOUR SCREEN<br>KEEP IT CENTERED UNTIL YOU SEE A FLASH!<br><br> -->
             </p>
         </div>
         <div class='start-button-container' id='start-button-container'>
-            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='startGame(), startTimer()'>START!</button>
+            <button id='startbtn' href='javascript:void(0)' class='start-button' onclick='startGame(), startTimer()'>
+                <!-- START! -->
+            </button>
         </div>
         <img src="assets/LandingPage/bottomborder.png" class='grass'>
     </div>
-    <div class="timer">
+    <div>
         <span id="timer" class="timer">1:00</span>
     </div>
 
     <div class="score">
-        <span id="score" class="score">Animals Found: 0</span>
+        <span id="score" class="score">
+            <!-- Animals Found: 0 -->
+        </span>
     </div>
 
     <object id="cameralens" class="cameralens">
@@ -59,24 +65,28 @@
         <a href="javascript:void(0)"></a>
         <div class='title-container'>
             <img class="company-logo" src="assets/LandingPage/LCS.png">
-            <h1 class="exhibit">
-                RORY'S BACKYARD
+            <h1 class="exhibit exhibit-notebook">
+                <!-- RORY'S BACKYARD -->
             </h1>
         </div>
         <p class="endgame-content">
-            <a>YOU FOUND</a>
+            <a class="endgame-content-1">
+                <!-- YOU FOUND -->
+            </a>
             <span id="finalscore">0</span>
-            <a>IN RORY'S BACKYARD!</a>
+            <a class="endgame-content-2">
+                <!-- IN RORY'S BACKYARD! -->
+            </a>
         </p>
         <h2 class='score-page-text'>
-            CHECK OUT RORY'S ALBUM BELOW TO SEE HIS NOTES ABOUT EACH SPECIES
+            <!-- CHECK OUT RORY'S ALBUM BELOW TO SEE HIS NOTES ABOUT EACH SPECIES -->
         </h2>
         <div id="notebook">
         </div>
         <div class='try-again-container' id='try-again-container'>
         </div>
         <div class='survey-link'>We value your feedback!
-            <a href="https://freeonlinesurveys.com/s/HENs76X7#/0">Click Here</a> to tell us about your experience.</div>
+            <a href="https://freeonlinesurveys.com/s/HENs76X7#/0">Tap Here</a> to tell us about your experience.</div>
     </div>
 
     <script src="index.js"></script>
@@ -93,6 +103,7 @@
             </a-entity>
         </a-entity>
     </a-scene>
+    <script src="./assets/js/game-text.js"></script>
     <script src="./assets/js/setup-scene-container.js"></script>
     <script src="./assets/js/register-component.js"></script>
     <script src="./assets/js/notebook.js"></script>
