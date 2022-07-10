@@ -86,6 +86,7 @@ fetch(`./assets/data/${langFile}.json`)
 
         boldEl.innerText = boldText;
         animalTextEl.innerText = animalText;
+        boldEl.setAttribute('class', 'animal-facts-headers');
 
         liEl.appendChild(boldEl);
         liEl.appendChild(animalTextEl);

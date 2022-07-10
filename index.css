@@ -403,7 +403,7 @@ body {
   padding-bottom: 10px;
   font-family: "Architects Daughter", cursive;
   font-size: 18px;
-  display: flex;
+  /* display: flex; */
   gap: 30px;
 }
 
@@ -417,10 +417,15 @@ body {
   gap: 4px;
 }
 
+.animal-facts-headers {
+    font-weight: 900;
+}
+
 .animal-facts {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   line-height: 1.2;
+  list-style: none;
 }
 
 .green-check-mark {
@@ -435,7 +440,9 @@ body {
   background-color: white;
   border: 1px solid rgb(190, 190, 190);
   box-shadow: 5px 5px 10px black;
-  flex-shrink: 0;
+  float: left;
+  margin-right: 14px;
+  /* flex-shrink: 0; */
 }
 
 .polaroid-name {
