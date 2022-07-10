@@ -72,7 +72,7 @@ function openNav() {
 
 function animalFound() {
   score = score += 1;
-  document.querySelector("#score").innerHTML = "Animals Found: " + score;
+  document.querySelector(".score").innerHTML = "Animals Found: " + score;
   cameraFlash.style.display = "block";
   cameraCircle.setAttribute("class", "circle");
   setTimeout(function () {
