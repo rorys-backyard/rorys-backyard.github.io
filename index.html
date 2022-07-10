@@ -89,24 +89,24 @@
             <a href="https://freeonlinesurveys.com/s/HENs76X7#/0">Tap Here</a> to tell us about your experience.</div>
     </div>
 
-    <script src="./assets/js/game-text.js"></script>
     <script src="index.js"></script>
     <a-scene arjs='sourceType: webcam; debugUIEnabled: false;' device-orientation-permission-ui="enabled: false">
         <!-- <a-marker markerhandler preset='custom' type='pattern' url='assets/pattern-possLCS.patt' emitevents="true" id="animated-marker" value='6'> -->
-        <a-marker markerhandler preset='hiro' emitevents="true" id="animated-marker" value='6'>
-            <!-- Setup Scene Container -->
-            <!-- <a-box> here for debugging issues with the scene planing to the marker -->
-            <!-- <a-box position='0 0 0' color='red' scale='0.5 0.1 0.5'></a-box> -->
-        </a-marker>
-        <a-entity camera look-controls='enabled: false; magicWindowTrackingEnabled: false'>
-            <!-- This is how the click trigger happens -->
-            <a-entity cursor='fuse: true; fuseTimeout: 1500' position='0 0 -1'>
-            </a-entity>
-        </a-entity>
-    </a-scene>
-    <script src="./assets/js/setup-scene-container.js"></script>
-    <script src="./assets/js/register-component.js"></script>
-    <script src="./assets/js/notebook.js"></script>
+            <a-marker markerhandler preset='hiro' emitevents="true" id="animated-marker" value='6'>
+                <!-- Setup Scene Container -->
+                <!-- <a-box> here for debugging issues with the scene planing to the marker -->
+                    <!-- <a-box position='0 0 0' color='red' scale='0.5 0.1 0.5'></a-box> -->
+                </a-marker>
+                <a-entity camera look-controls='enabled: false; magicWindowTrackingEnabled: false'>
+                    <!-- This is how the click trigger happens -->
+                    <a-entity cursor='fuse: true; fuseTimeout: 1500' position='0 0 -1'>
+                    </a-entity>
+                </a-entity>
+            </a-scene>
+            <script src="./assets/js/setup-scene-container.js"></script>
+            <script src="./assets/js/register-component.js"></script>
+            <script src="./assets/js/notebook.js"></script>
+            <script src="./assets/js/game-text.js"></script>
 </body>
 
 </html>
