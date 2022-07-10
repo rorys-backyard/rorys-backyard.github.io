@@ -1,4 +1,4 @@
-const TIME_LIMIT = 15;
+const TIME_LIMIT = 30;
 const maximumAnimals = 9;
 let score = 0;
 let timePassed = 0;
@@ -70,9 +70,19 @@ function openNav() {
   }
 }
 
+let esValidation3 = /es/.test(navigator.language);
+let found;
+
 function animalFound() {
   score = score += 1;
-  document.querySelector(".score").innerHTML = "Animals Found: " + score;
+  switch (esValidation3) {
+    case true:
+      found = "animales encontrados: ";
+      break;
+    default:
+      found = "animals found: ";
+  }
+  document.querySelector(".score").innerHTML = found + score;
   cameraFlash.style.display = "block";
   cameraCircle.setAttribute("class", "circle");
   setTimeout(function () {

@@ -1,5 +1,4 @@
-let userLang2 = navigator.language;
-let esValidation2 = /es/.test(userLang2);
+let esValidation2 = /es/.test(navigator.language);
 let textFile;
 switch (esValidation2) {
   case true:

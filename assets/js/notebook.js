@@ -1,5 +1,4 @@
-let userLang = navigator.language;
-let esValidation = /es/.test(userLang);
+let esValidation = /es/.test(navigator.language);
 let langFile;
 switch (esValidation) {
   case true:
@@ -7,7 +6,7 @@ switch (esValidation) {
     break;
   default:
     langFile = "animals";
-}
+};
 
 fetch(`./assets/data/${langFile}.json`)
   .then((response) => response.json())
@@ -28,7 +27,7 @@ fetch(`./assets/data/${langFile}.json`)
       const animalFacts = document.createElement("ul");
       animalFacts.setAttribute("class", "animal-facts");
 
-      const animalLists = [
+      const animalListsEn = [
         {
           key: "conservationStatus",
           listName: "conservation status",
@@ -44,8 +43,36 @@ fetch(`./assets/data/${langFile}.json`)
         {
           key: "waysYouCanHelp",
           listName: "ways you can help",
-        },
+        }
       ];
+
+      const animalListsEs = [
+        {
+          key: "conservationStatus",
+          listName: "estado de conservación",
+        },
+        {
+          key: "ecologicalRoles",
+          listName: "rol ecológico",
+        },
+        {
+          key: "threats",
+          listName: "amenazas",
+        },
+        {
+          key: "waysYouCanHelp",
+          listName: "formas en las que puedes ayudar",
+        }
+      ];
+
+      let animalLists;
+      switch (esValidation) {
+        case true:
+          animalLists = animalListsEs;
+          break;
+        default:
+          animalLists = animalListsEn;
+      };
 
       animalLists.forEach((item) => {
         const liEl = document.createElement("li");
