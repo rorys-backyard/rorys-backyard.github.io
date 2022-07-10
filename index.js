@@ -1,4 +1,4 @@
-const TIME_LIMIT = 30;
+const TIME_LIMIT = 60;
 const maximumAnimals = 9;
 let score = 0;
 let timePassed = 0;
