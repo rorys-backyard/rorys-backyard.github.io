@@ -1,0 +1,91 @@
+"Rory's Backyard" => "El Patio de Rory"
+
+"Rory's Backyard" => "El Patio de Rory"
+  
+"Hidden in Plain Sight: Augmented Reality Game" => "Oculto a Plena Vista: Juego de Realidad Aumentada"
+  
+"Can you find all 9 hidden animals?" => "¿Puedes encontrar los 9 animales escondidos?"
+  
+"Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!" => "La Florida es el hogar para muchas especies nativas en la vida silvestre que usan su abilidad para camuflarse a manera de mantenerse a salvo de los depredadores. ¡Mira si puedes encontrar los 9 animales escondidos en menos de un minuto!"
+
+"To play: Point your camera at the exhibit. Center an animal on your screen. Keep it centered until you see a flash!" => "Para jugar: Apunta tu cámara a la exhibición. Centra un animal en la pantalla. ¡Manténlo centrado hasta que veas un destello!"
+
+"Start!" => "¡Empieza!"
+
+"Animals Found: 0" => "animales encontrados: 0"
+  
+"You found # animals in Rory's Backyard!" => "¡Encontraste el # de Animales en el Jardín de Rory!"
+ 
+"Check out Rory's album below to see his notes about each species" => "Echa un vistazo al album de Rory, a continuacion estan sus notas sobre cada especie"
+
+"conservation status" => "estado de conservación"
+        
+"ecological roles" => "rol ecológico"
+        
+"threats" => "amenazas"
+
+"ways you can help" => "formas en las que puedes ayudar"
+
+[
+"Eastern Box Turtle" => "Tortuga de Caja del Este"
+"Vulnerable" => "Vulnerable"
+"Box turtles act as seed dispersers for many plants." => "Las tortugas de caja actúan como dispersores de semillas para muchas plantas."
+"Habitat loss, car collisions, and the taking of wild individuals to supply the pet trade." => "Pérdida del hábitat, colision con automóviles y la captura de animales en la vida silvestre por individuos que abastecen el comercio de mascotas."
+"Research any animal you are interested in owning as a pet before you buy it." => "Antes de comprar cualquier animal, investiga acerca de ese animal que quieres conservar como mascota."
+]
+[
+"Great Horned Owl" => "Búho Real Americano"
+"Least Concern" => "De menor preocupación"
+"As top predators, they help control the populations of many other animals." => "Siendo uno de los mayores depredadores, ayudan a controlar la población de muchos otros animales."
+"Pesticides, car collisions, habitat loss, net entanglement, and illegal hunting." => "Pesticidas, colision con automóviles, pérdida del hábitat, enredo en las mallas y la caza ilegal."
+"Use natural pest controls and take down any outdoor nets not in use." => "Utiliza un control natural de plagas y quita cualquier malla en el exterior que no esté en uso"
+]
+[
+"Green Treefrog" => "Rana Verde"
+"Least Concern" => "De menor preocupación"
+"As indicator species, green treefrogs can alert humans to negative environmental conditions." => "Como especies indicadoras, las ranas verdes pueden alertar a los humanos sobre condiciones ambientales negativas."
+"Competition with the nonnative Cuban Treefrog." => "Competencia con la no nativa Rana Verde Cubana."
+"Build a toad abode or other shelter for frogs in your backyard that provides a safe place for them during the day." => "Construye en tu propio jardín una morada de sapo u otro refugio para las ranas que les proporcione un lugar seguro durante el día."
+]
+[
+"North American Bobcat" => "El Lince Rojo de América del Norte (Gato Montés)"
+"Least Concern" => "De menor preocupación"
+"Bobcats are apex predators that keep small mammal and bird populations stable." => "Los linces son depredadores del ápice que mantienen estables las poblaciones de aves y mamíferos pequeños."
+"Hunting from humans and habitat loss." => "La caza y la pérdida de hábitat."
+"Spread the word that bobcats generally stay away from people and that their habitat needs saving." => "Correr la voz de que los linces generalmente se mantienen alejados de las personas y que su hábitat necesita ser salvado."
+]
+[
+"Northern Mockingbird" => "El Sinsonte Norteño (El Ruiseñor)"
+"Least Concern" => "De menor preocupación"
+"These birds help disperse seeds and also act as a natural form of pest control by consuming a large number of insects." => "Estas aves ayudan a dispersar las semillas y también actúan como control natural de plagas al consumir un gran número de insectos."
+"Predation from domestic or feral cats, severe weather, and striking windows." => "Son presas de los gatos domésticos o salvajes, el clima severo y colisiones con las ventanas."
+"Keep your pet cat inside and place anti-collision decals on your windows to help minimize the amount of window strikes by birds." => "Mantén tú gato adentro y coloca calcamonías anti-colisión en tus ventanas para ayudar a minimizar la cantidad de colisiones en ventanas por los pájaros.",
+]
+[
+"Raccoon" => "El Mapache"
+"Least Concern" => "De menor preocupación"
+"Raccoons help control populations of their prey species, including rodents and insects." => "Los mapaches ayudan a controlar las poblaciones de las especies que constituyen sus presas, incluyendo roedores e insectos."
+"Humans who view the animals as pests." => "Humanos que ven a estos animales como plagas."
+"Make sure outdoor garbage lids are secure, remove any fallen fruit from trees or bird seed from feeders at night, and never feed any wild animal." => "Asegúrate que las tapaderas de los basureros que se mantienen afuera estén cerradas, por la noche retira cualquier fruta caída de los árboles o semillas de aves de los alimentadores y nunca alimentes a ningún animal de la vida silvestre."
+]
+[
+"Red Rat Snake" => "Serpiente Rata Roja (Serpiente del Maíz)"
+"Least Concern" => "De menor preocupación"
+"Red rat or corn snakes help keep rodent populations under control." => "Las serpientes rata roja o serpientes del maíz ayudan a mantener bajo control las poblaciones de roedores."
+"Habitat destruction, misidentification as a venomous snake, and pet trade." => "Destrucción del hábitat, identificación errónea como serpiente venenosa y comercio de mascotas."
+"If you come across any wild snake, leave it alone and give it space." => "Si se encuentra con alguna serpiente en la vida silvestre, déjela donde está y dale su espacio."
+]
+[
+"Striped Skunk" => "Mofeta Rayada (Zorillo)"
+"Least Concern" => "De menor preocupación"
+"Skunks are a natural pest control as they consume a variety of insects." => "Las mofetas o zorrillos son un control natural de plagas, ya que consumen una variedad de insectos."
+"Skunk specific disease outbreaks and humans that view them as pests." => "Brotes de enfermedades específicas del zorrillo y los humanos que las ven como plagas."
+"Spread the word that skunks play an important part in our environment." => "Corre la voz de que los zorrillos juegan un papel importante en nuestro ambiente."
+]
+[
+"White-Tailed Deer" => "Venado de Cola Blanca"
+"Least Concern" => "De menor preocupación"
+"Considered a keystone herbivore, white-tailed deer can have a dramatic effect on the plants and predators in their areas." => "Considerado un herbívoro de la piedra angular, el venado de cola blanca puede tener un efecto dramático en las plantas y en los depredadores de sus áreas."
+"Car collisions, habitat loss, and humans who view the animals as pests." => "Colisión con automóviles, pérdida del hábitat y los humanos que ven a los animales como plagas."
+"Look for alternative landscaping options for your yard like plants that aren’t as tasty to deer." => "Busca opciones de jardinería alternas para tu jardín, como ser plantas que no sean tan deliciosas para los venados."
+]
